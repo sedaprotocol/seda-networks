@@ -654,7 +654,6 @@
             "code_hash": "PE1fUZ/LO2F0zF0CZVN8DTWHbCkX1wVX9no7JNxY8E8=",
             "creator": "seda1gnes565n2vhldm2eerm5fcuwz2mpcadvqnvped",
             "instantiate_config": {
-              "address": "",
               "addresses": [
                 ""
               ],
@@ -670,7 +669,6 @@
             "code_hash": "bdP7Grm2WnZHHpEu6VkFRbS+LKqYpTVI/EX8WyUOZgM=",
             "creator": "seda19gqrkdjhju0txurteag8vle90p09a5r5dd78rp",
             "instantiate_config": {
-              "address": "",
               "addresses": [],
               "permission": "Everybody"
             }
@@ -732,7 +730,6 @@
       ],
       "params": {
         "code_upload_access": {
-          "address": "",
           "addresses": [],
           "permission": "Everybody"
         },
