@@ -1,0 +1,10 @@
+{
+  "priv_key": {
+    "type": "tendermint/PrivKeySecp256k1",
+    "value": "K1XCmKFhfMrUop/43XlBzHFWE7HN1wLTo1WWkmBb87s="
+  },
+  "pub_key": {
+    "type": "tendermint/PubKeySecp256k1",
+    "value": "Ap9uzPpaMJp0d0v0jlO/KdEwyd+OVqNDcsOCxc+cKL2i"
+  }
+}
