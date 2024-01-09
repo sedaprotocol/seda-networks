@@ -1,11 +1,12 @@
 {
-  "app_name": "seda-chaind",
-  "app_version": "0.0.1-rc5-95-gef5b88d",
-  "genesis_time": "2024-01-08T20:28:29.436778Z",
+  "app_name": "seda-1",
+  "app_version": "0.0.1-rc5-106-g6cd35c5",
+  "genesis_time": "2024-01-09T23:04:05.489263Z",
   "chain_id": "seda-1",
   "initial_height": 1,
   "app_hash": null,
   "app_state": {
+    "07-tendermint": null,
     "auth": {
       "params": {
         "max_memo_characters": "256",
@@ -87,14 +88,14 @@
         },
         {
           "@type": "/cosmos.auth.v1beta1.BaseAccount",
-          "address": "seda1fzw6fk42n355ll6gyxnlve0zz0ua3a9qunmkfw",
+          "address": "seda1nmxg0m37f2kw08x3cq9mhrnus3nuyy7jupa2mh",
           "pub_key": null,
           "account_number": "10",
           "sequence": "0"
         },
         {
           "@type": "/cosmos.auth.v1beta1.BaseAccount",
-          "address": "seda16dsh3tv7dapheeepcreu6xsujtd2u6j55ylnyg",
+          "address": "seda1wp4s9w3wlc6gysf9sfj20ttrx45ernqxssttam",
           "pub_key": null,
           "account_number": "11",
           "sequence": "0"
@@ -129,15 +130,6 @@
           ]
         },
         {
-          "address": "seda1fzw6fk42n355ll6gyxnlve0zz0ua3a9qunmkfw",
-          "coins": [
-            {
-              "denom": "aseda",
-              "amount": "500000000000000000000000000000000000"
-            }
-          ]
-        },
-        {
           "address": "seda1fsw93wnvav0uvnzv3alk9zvkpp3jnn3pcj8l05",
           "coins": [
             {
@@ -165,11 +157,29 @@
           ]
         },
         {
+          "address": "seda1wp4s9w3wlc6gysf9sfj20ttrx45ernqxssttam",
+          "coins": [
+            {
+              "denom": "aseda",
+              "amount": "500000000000000000000000000000000000"
+            }
+          ]
+        },
+        {
           "address": "seda1jd2q0mz0vzs75tp7lyuzf9064zccddgs8utjr5",
           "coins": [
             {
               "denom": "aseda",
               "amount": "100000000000000000000000000000000000"
+            }
+          ]
+        },
+        {
+          "address": "seda1nmxg0m37f2kw08x3cq9mhrnus3nuyy7jupa2mh",
+          "coins": [
+            {
+              "denom": "aseda",
+              "amount": "500000000000000000000000000000000000"
             }
           ]
         },
@@ -188,15 +198,6 @@
             {
               "denom": "aseda",
               "amount": "100000000000000000000000000000000000"
-            }
-          ]
-        },
-        {
-          "address": "seda16dsh3tv7dapheeepcreu6xsujtd2u6j55ylnyg",
-          "coins": [
-            {
-              "denom": "aseda",
-              "amount": "500000000000000000000000000000000000"
             }
           ]
         },
@@ -313,10 +314,10 @@
                 },
                 "min_self_delegation": "1",
                 "delegator_address": "",
-                "validator_address": "sedavaloper16dsh3tv7dapheeepcreu6xsujtd2u6j5lj8gl3",
+                "validator_address": "sedavaloper1wp4s9w3wlc6gysf9sfj20ttrx45ernqxmxnsxz",
                 "pubkey": {
                   "@type": "/cosmos.crypto.ed25519.PubKey",
-                  "key": "3saClGG2kSghn6gESWLg6w1dfYtKAmtC3LIfaithKIM="
+                  "key": "MmQ7ABWfWm0yM5B68F8rc/SU2QJlGL9fXWjFPIrmrzA="
                 },
                 "value": {
                   "denom": "aseda",
@@ -324,7 +325,7 @@
                 }
               }
             ],
-            "memo": "30272d3057093604d3b8b552800f7df2e9eb3a46@18.130.31.180:26656",
+            "memo": "8bbfbcdef2b71e1cb0884f23b9a081eac6d9af38@18.130.31.180:26656",
             "timeout_height": "0",
             "extension_options": [],
             "non_critical_extension_options": []
@@ -334,7 +335,7 @@
               {
                 "public_key": {
                   "@type": "/cosmos.crypto.secp256k1.PubKey",
-                  "key": "A6tS3WikzZ/xyybx0W2BOj/YO7H7Nru7PWLVxuZOduQs"
+                  "key": "AkfnwaPnhHSNcnidnPlj4b19K6vlLUklUUglH7ozK34s"
                 },
                 "mode_info": {
                   "single": {
@@ -353,7 +354,7 @@
             "tip": null
           },
           "signatures": [
-            "Ra3KT0zzFOX7tmIlCohws6PkDwAi73fsWEi+rkGT5vALGpWIRgJTTNOTLsffclpZiy8k/m1cG3rhuEISsTE0Ng=="
+            "hqEAA8KiewlzIIGJKf8eoa/jMy+qzuP/Cb06MYVgQ+93lf/MyY1IB4w5vJtHf+sQ/jAxZ3X8P14a40BlDyFuHA=="
           ]
         },
         {
@@ -375,10 +376,10 @@
                 },
                 "min_self_delegation": "1",
                 "delegator_address": "",
-                "validator_address": "sedavaloper1fzw6fk42n355ll6gyxnlve0zz0ua3a9qh9rdjh",
+                "validator_address": "sedavaloper1nmxg0m37f2kw08x3cq9mhrnus3nuyy7jhh93qw",
                 "pubkey": {
                   "@type": "/cosmos.crypto.ed25519.PubKey",
-                  "key": "VurEbZTRhBVcBy6RLWPZdzEIRf+RY1SqCSOZJYcugY8="
+                  "key": "I+HeiMxXq17AwP98ejszjo8NhRktB2spwxZSnPf3CXw="
                 },
                 "value": {
                   "denom": "aseda",
@@ -386,7 +387,7 @@
                 }
               }
             ],
-            "memo": "9cb38895693a8214d65a9eaa901ef624951ab180@35.177.180.184:26656",
+            "memo": "ee343083ad521cb27fe27cee018f4b7253d4c914@35.177.180.184:26656",
             "timeout_height": "0",
             "extension_options": [],
             "non_critical_extension_options": []
@@ -396,7 +397,7 @@
               {
                 "public_key": {
                   "@type": "/cosmos.crypto.secp256k1.PubKey",
-                  "key": "Ayol8eE4/7HYn1nYNmyMNNx34U4bNh4LucPBZeB9OK8o"
+                  "key": "AnC6SUlWwVttaKXcYTnBXGQUzza/Zu0deQqdvoD6N8Fw"
                 },
                 "mode_info": {
                   "single": {
@@ -415,7 +416,7 @@
             "tip": null
           },
           "signatures": [
-            "K5Nq43UF9xCPhBP4LJQwmtYahHo9NQ/FSbgLP6yLmQIoPTV25fD1+egoeZBaSNy0Y8+FZk77Ip2qzsCsas298g=="
+            "+onX/GDVIi2OBgvw83npgfpeZXOI2iTqStSbKhz04DsGGzgwPL8XpCgc7uHIsuGghb6196ltuSznYKzjw79BSw=="
           ]
         }
       ]
@@ -538,7 +539,6 @@
         "blocks_per_year": "6311520"
       }
     },
-    "params": null,
     "slashing": {
       "params": {
         "signed_blocks_window": "10000",
@@ -595,7 +595,7 @@
     "params": {
       "block": {
         "max_bytes": "22020096",
-        "max_gas": "100000000"
+        "max_gas": "-1"
       },
       "evidence": {
         "max_age_num_blocks": "100000",
