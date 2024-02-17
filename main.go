@@ -1,6 +1,7 @@
 package main
 
 import (
+	"bytes"
 	"encoding/json"
 	"fmt"
 	"io"
@@ -10,8 +11,10 @@ import (
 	"os"
 	"os/exec"
 	"path/filepath"
-	"strconv"
+	"strings"
 	"time"
+
+	sdk "github.com/cosmos/cosmos-sdk/types"
 )
 
 var (
@@ -110,14 +113,7 @@ func main() {
 		}
 	}
 
-	for i, file := range gentxFiles {
-		// add keys
-		keyName := TEST_KEY_NAME + "-" + strconv.Itoa(i)
-		_, err = exec.Command(BINARY_PATH, "keys", "add", keyName, "--keyring-backend", "test").Output()
-		if err != nil {
-			log.Fatal("Error adding key: ", err)
-		}
-
+	for _, file := range gentxFiles {
 		gentxFile, err := os.ReadFile(file)
 		if err != nil {
 			log.Fatal("Error reading gentx file: ", err)
@@ -158,12 +154,29 @@ func main() {
 			log.Fatalf("Bonded stake exceeds limit: %d > %d", amount, maxBond)
 		}
 
-		// add genesis account
-		log.Println("Adding genesis account:", keyName)
-		log.Println("Amount:", GENESIS_ALLOCATION)
-		_, err = exec.Command(BINARY_PATH, "add-genesis-account", keyName, GENESIS_ALLOCATION, "--keyring-backend", "test").Output()
+		// add genesis account, if it hasn't already been added
+		addrBytes, err := sdk.GetFromBech32(validatorAddress, "sedavaloper")
 		if err != nil {
-			log.Fatalf("Error adding genesis account: %s", err)
+			log.Fatalf("Error converting validator address to bytes: %s", err)
+		}
+		delegatorAddr, err := sdk.Bech32ifyAddressBytes("seda", addrBytes)
+		if err != nil {
+			log.Fatalf("Error converting address bytes to delegator address: %s", err)
+		}
+
+		log.Println("Adding genesis account:", delegatorAddr)
+		log.Println("Amount:", GENESIS_ALLOCATION)
+
+		var stderr bytes.Buffer
+		cmd := exec.Command(BINARY_PATH, "add-genesis-account", delegatorAddr, GENESIS_ALLOCATION, "--keyring-backend", "test")
+		cmd.Stderr = &stderr
+		err = cmd.Run()
+		if err != nil {
+			if strings.Contains(stderr.String(), "cannot add account at existing address") {
+				log.Printf("genesis account %s has already been added", delegatorAddr)
+			} else {
+				log.Fatalf("Error adding genesis account: %s", err)
+			}
 		}
 
 		// // create gentx
