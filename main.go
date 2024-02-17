@@ -21,48 +21,23 @@ var (
 	CHAIN_ID    = "seda-1-testnet"
 	WORKING_DIR = "./testnet"
 	BINARY_URL  = "https://github.com/sedaprotocol/seda-chain/releases/download/v0.0.6/sedad-amd64"
-	BINARY      = "sedad"
 
 	/* =================================================== */
 	/*         The followings should rarely change         */
 	/* =================================================== */
-	GENTX_DIR   = WORKING_DIR + "/gentx"
-	BINARY_PATH = "./" + BINARY
-	SEDA_HOME   = os.Getenv("HOME") + "/.sedad"
-	PREFIX      = "seda"
-	DENOM       = "aseda"
-
+	BINARY             = "sedad"
+	BINARY_PATH        = "./" + BINARY
+	GENTX_DIR          = filepath.Join(WORKING_DIR, "gentx")
+	SEDA_HOME          = filepath.Join(os.Getenv("HOME"), ".sedad")
+	PREFIX             = "seda"
+	DENOM              = "aseda"
 	TEST_KEY_NAME      = "test-key"
-	GENESIS_ALLOCATION = "1000000000000000000000000" + DENOM
-	DEFAULT_BOND       = "1000000000000000000000000" + DENOM
+	GENESIS_ALLOCATION = "1000000000000000000000000" + DENOM    // 1M SEDA
+	DEFAULT_BOND       = "1000000000000000000000000" + DENOM    // 1M SEDA
 	MAXBOND            = "600000000000000000000000000000000000" // TO-DO what number to use here?
 )
 
 func main() {
-	var files []string
-
-	log.Println("Checking if any gentx.json files exist under " + GENTX_DIR)
-	err := filepath.Walk(GENTX_DIR, func(path string, info os.FileInfo, err error) error {
-		if !info.IsDir() {
-			files = append(files, path)
-		}
-		return nil
-	})
-	if err != nil {
-		log.Fatal("Error checking for gentx.json files: ", err)
-	}
-
-	for _, file := range files {
-		if filepath.Ext(file) != ".json" {
-			log.Println("No gentx.json found under " + GENTX_DIR + ", exiting...")
-			os.Exit(1)
-		}
-
-		validateGentx()
-	}
-}
-
-func validateGentx() {
 	log.Println("Downloading binary...")
 	err := downloadFile(BINARY_PATH, BINARY_URL)
 	if err != nil {
@@ -198,14 +173,7 @@ func validateGentx() {
 		// }
 
 		// copy the gentx file to the node directory
-		data, err := os.ReadFile(file)
-		if err != nil {
-			log.Fatalf("Failed to read file: %v", err)
-		}
-		err = os.WriteFile(filepath.Join(gentxDir, filepath.Base(file)), data, 0644)
-		if err != nil {
-			log.Fatalf("Failed to write file: %v", err)
-		}
+		err = copyFile(file, filepath.Join(gentxDir, filepath.Base(file)))
 	}
 
 	log.Println("Validating finished...")
