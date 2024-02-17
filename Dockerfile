@@ -11,6 +11,4 @@ COPY . .
 
 RUN go build -o validate-gentx .
 
-# CMD ["./validate-gentx"]
-ENTRYPOINT ["tail", "-f", "/dev/null"]
-# CMD ["sh", "-c", "./validate-gentx && tail -f /dev/null"]
+CMD ["./validate-gentx"]
