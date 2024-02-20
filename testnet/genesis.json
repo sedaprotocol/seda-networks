@@ -300,6 +300,41 @@
             "start_time": "1708610400"
           },
           "funder_address": "seda1dlszg2sst9r69my4f84l3mj66zxcf3umcgujys30t84srg95dgvsahaqzm"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "seda1jt9w26mpxxjsk63mvd4m2ynj0af09csl40j72s",
+          "pub_key": null,
+          "account_number": "14",
+          "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "seda14qekdkj2nmmwea4ufg9n002a3pud23y8nvvnj3",
+          "pub_key": null,
+          "account_number": "15",
+          "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "seda1zekkwess8sfyerqs9qw48kwazl2lh49kwzh6vm",
+          "pub_key": null,
+          "account_number": "16",
+          "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "seda1emlalkl27nuu8rr7nxtt9vjxart0su0l8ytms0",
+          "pub_key": null,
+          "account_number": "17",
+          "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "seda1rp0kky2annjhumvxcc704jsswps8w6asrel8mq",
+          "pub_key": null,
+          "account_number": "18",
+          "sequence": "0"
         }
       ]
     },
@@ -312,6 +347,24 @@
         "default_send_enabled": true
       },
       "balances": [
+        {
+          "address": "seda1zekkwess8sfyerqs9qw48kwazl2lh49kwzh6vm",
+          "coins": [
+            {
+              "denom": "aseda",
+              "amount": "1000000000000000000000000"
+            }
+          ]
+        },
+        {
+          "address": "seda1rp0kky2annjhumvxcc704jsswps8w6asrel8mq",
+          "coins": [
+            {
+              "denom": "aseda",
+              "amount": "1000000000000000000000000"
+            }
+          ]
+        },
         {
           "address": "seda1xd04svzj6zj93g4eknhp6aq2yyptagcc2zeetj",
           "coins": [
@@ -385,11 +438,29 @@
           ]
         },
         {
+          "address": "seda1jt9w26mpxxjsk63mvd4m2ynj0af09csl40j72s",
+          "coins": [
+            {
+              "denom": "aseda",
+              "amount": "1000000000000000000000000"
+            }
+          ]
+        },
+        {
           "address": "seda1jd2q0mz0vzs75tp7lyuzf9064zccddgs8utjr5",
           "coins": [
             {
               "denom": "aseda",
               "amount": "2000000000000000000000000"
+            }
+          ]
+        },
+        {
+          "address": "seda14qekdkj2nmmwea4ufg9n002a3pud23y8nvvnj3",
+          "coins": [
+            {
+              "denom": "aseda",
+              "amount": "1000000000000000000000000"
             }
           ]
         },
@@ -408,6 +479,15 @@
             {
               "denom": "aseda",
               "amount": "2000000000000000000000000"
+            }
+          ]
+        },
+        {
+          "address": "seda1emlalkl27nuu8rr7nxtt9vjxart0su0l8ytms0",
+          "coins": [
+            {
+              "denom": "aseda",
+              "amount": "1000000000000000000000000"
             }
           ]
         },
@@ -522,6 +602,68 @@
               {
                 "@type": "/cosmos.staking.v1beta1.MsgCreateValidator",
                 "description": {
+                  "moniker": "polkachu.com",
+                  "identity": "0A6AF02D1557E5B4",
+                  "website": "https://polkachu.com",
+                  "security_contact": "hello@polkachu.com",
+                  "details": "Polkachu is the trusted staking service provider for blockchain projects. 100% refund for downtime slash. Contact us at hello@polkachu.com"
+                },
+                "commission": {
+                  "rate": "0.050000000000000000",
+                  "max_rate": "1.000000000000000000",
+                  "max_change_rate": "0.010000000000000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "",
+                "validator_address": "sedavaloper1jt9w26mpxxjsk63mvd4m2ynj0af09csl7e293f",
+                "pubkey": {
+                  "@type": "/cosmos.crypto.ed25519.PubKey",
+                  "key": "xVew5AG2o5Ls1UxendY+cuTRUukq+tfabLGpM44kAoQ="
+                },
+                "value": {
+                  "denom": "aseda",
+                  "amount": "1000000000000000000000000"
+                }
+              }
+            ],
+            "memo": "5d74be205989ef74c086fefb1671d55bbbaf7ff3@178.63.73.162:26656",
+            "timeout_height": "0",
+            "extension_options": [],
+            "non_critical_extension_options": []
+          },
+          "auth_info": {
+            "signer_infos": [
+              {
+                "public_key": {
+                  "@type": "/cosmos.crypto.secp256k1.PubKey",
+                  "key": "As1WcJsvf1NQgRlS8a2PHuueKhHlCYrFe3VooMxQdflR"
+                },
+                "mode_info": {
+                  "single": {
+                    "mode": "SIGN_MODE_DIRECT"
+                  }
+                },
+                "sequence": "0"
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas_limit": "200000",
+              "payer": "",
+              "granter": ""
+            },
+            "tip": null
+          },
+          "signatures": [
+            "/xfhvfM0GEG5NlaVuFrSv4+CbWPQ+i+tw56YD73Kj2IM6eHTBbza7bT8tKceDwkVk+Ma15Fg4PWxK7wsKSnlyQ=="
+          ]
+        },
+        {
+          "body": {
+            "messages": [
+              {
+                "@type": "/cosmos.staking.v1beta1.MsgCreateValidator",
+                "description": {
                   "moniker": "SEDA-node1",
                   "identity": "",
                   "website": "",
@@ -576,6 +718,254 @@
           },
           "signatures": [
             "1RcqU+HK/luQK35miWwaMdLPKNOCXrQBXjLqgfJdp5YkzOW5XthsO3St8fTozJZuAJmfhpUMvsPI+6QdDVnjpQ=="
+          ]
+        },
+        {
+          "body": {
+            "messages": [
+              {
+                "@type": "/cosmos.staking.v1beta1.MsgCreateValidator",
+                "description": {
+                  "moniker": " Lavender.Five Nodes 🐝",
+                  "identity": "",
+                  "website": "https://www.lavenderfive.com/",
+                  "security_contact": "security@lavenderfive.com",
+                  "details": "Fortifying crypto networks with Horcrux security, slash insurance, and open source contributions. Connect with us at https://linktr.ee/lavenderfive."
+                },
+                "commission": {
+                  "rate": "0.050000000000000000",
+                  "max_rate": "0.100000000000000000",
+                  "max_change_rate": "0.050000000000000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "",
+                "validator_address": "sedavaloper14qekdkj2nmmwea4ufg9n002a3pud23y8c65gfg",
+                "pubkey": {
+                  "@type": "/cosmos.crypto.ed25519.PubKey",
+                  "key": "S/948HGxyCtgXNpXIA0MeE/PeHD45TD5T7g1fS2OuD4="
+                },
+                "value": {
+                  "denom": "aseda",
+                  "amount": "1000000000000000000000000"
+                }
+              }
+            ],
+            "memo": "ee81a286a8e4e30025ef22c998c9b3773ed78536@192.168.1.151:26656",
+            "timeout_height": "0",
+            "extension_options": [],
+            "non_critical_extension_options": []
+          },
+          "auth_info": {
+            "signer_infos": [
+              {
+                "public_key": {
+                  "@type": "/cosmos.crypto.secp256k1.PubKey",
+                  "key": "AgDrjXJ1+/lwJdf+fekEXKwLpA30N7F/Z3ESi/Sn7Rw4"
+                },
+                "mode_info": {
+                  "single": {
+                    "mode": "SIGN_MODE_DIRECT"
+                  }
+                },
+                "sequence": "0"
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas_limit": "200000",
+              "payer": "",
+              "granter": ""
+            },
+            "tip": null
+          },
+          "signatures": [
+            "+bF6Tn/RIH8sqj4dxtYANVfejqloaFEzoaMao1snd8USbgyJULaxSC0r8cKFcfZXZeOa16yThd4OPupBGFkDog=="
+          ]
+        },
+        {
+          "body": {
+            "messages": [
+              {
+                "@type": "/cosmos.staking.v1beta1.MsgCreateValidator",
+                "description": {
+                  "moniker": "RHINO",
+                  "identity": "59C635D1CD02FEEC",
+                  "website": "https://rhinostake.com",
+                  "security_contact": "support@rhinostake.com",
+                  "details": "An Active, Independent and Secure Blockchain Validator. We deliver redundant and geo-distributed infrastructure at-scale for Aptos, Chainlink, Ethereum, and Cosmos"
+                },
+                "commission": {
+                  "rate": "0.050000000000000000",
+                  "max_rate": "0.200000000000000000",
+                  "max_change_rate": "0.010000000000000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "",
+                "validator_address": "sedavaloper1zekkwess8sfyerqs9qw48kwazl2lh49k950phz",
+                "pubkey": {
+                  "@type": "/cosmos.crypto.ed25519.PubKey",
+                  "key": "hezznnm0msG2HFdbBmi9jcYPaN6dlCVt2VcYYdb/0/U="
+                },
+                "value": {
+                  "denom": "aseda",
+                  "amount": "1000000000000000000000000"
+                }
+              }
+            ],
+            "memo": "9fea602250622eaf3c3bcde89db561deb7fa54b3@10.254.125.122:26656",
+            "timeout_height": "0",
+            "extension_options": [],
+            "non_critical_extension_options": []
+          },
+          "auth_info": {
+            "signer_infos": [
+              {
+                "public_key": {
+                  "@type": "/cosmos.crypto.secp256k1.PubKey",
+                  "key": "AufmlosNLETdpjSLJzuNqxY2WN8ubBtCUFS7Vl9Iqtw9"
+                },
+                "mode_info": {
+                  "single": {
+                    "mode": "SIGN_MODE_DIRECT"
+                  }
+                },
+                "sequence": "0"
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas_limit": "200000",
+              "payer": "",
+              "granter": ""
+            },
+            "tip": null
+          },
+          "signatures": [
+            "JoQaIoErIRv4FWiFkyxa/gkavNSmxh8eCY1R7Dz7wt4NK+dsAUaGXatpdbUwP/Iu9t5ji7lYt1mJc5orqKSfgA=="
+          ]
+        },
+        {
+          "body": {
+            "messages": [
+              {
+                "@type": "/cosmos.staking.v1beta1.MsgCreateValidator",
+                "description": {
+                  "moniker": "WhisperNode 🤐",
+                  "identity": "C99B3A6836BF0CB8",
+                  "website": "https://REStake.WhisperNode.com/seda",
+                  "security_contact": "security@whispernode.com",
+                  "details": "WhisperNode operates robust, high up-time validators across the Cosmos ecosystem. Auto-compound your rewards with our REStake app. Join our Discord: https://discord.gg/4E5KZsRtjE / tweet @ https://twitter.com/WhisperNode 🐦"
+                },
+                "commission": {
+                  "rate": "0.070000000000000000",
+                  "max_rate": "0.200000000000000000",
+                  "max_change_rate": "0.010000000000000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "",
+                "validator_address": "sedavaloper1emlalkl27nuu8rr7nxtt9vjxart0su0lvjnqtk",
+                "pubkey": {
+                  "@type": "/cosmos.crypto.ed25519.PubKey",
+                  "key": "MffxKuAyKXogFYaLknE6L/4zuuKNciFdIQmx8O9YdIM="
+                },
+                "value": {
+                  "denom": "aseda",
+                  "amount": "1000000000000000000000000"
+                }
+              }
+            ],
+            "memo": "8c26be673af6909fc420cbea7790c0725967c2e4@142.132.154.53:26656",
+            "timeout_height": "0",
+            "extension_options": [],
+            "non_critical_extension_options": []
+          },
+          "auth_info": {
+            "signer_infos": [
+              {
+                "public_key": {
+                  "@type": "/cosmos.crypto.secp256k1.PubKey",
+                  "key": "A+90ctrvp2lDx3LD2DkINpm8AInBvdvqwUfH8flx6xFH"
+                },
+                "mode_info": {
+                  "single": {
+                    "mode": "SIGN_MODE_DIRECT"
+                  }
+                },
+                "sequence": "0"
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas_limit": "200000",
+              "payer": "",
+              "granter": ""
+            },
+            "tip": null
+          },
+          "signatures": [
+            "Mu7eAt0ypZdZZQoE+TA4su5rsn7n1N9nvjGby7BxUVFdiMhjFKW1Xed0+b7e/7Af1jtNdThLF6317Y1AqnrIuA=="
+          ]
+        },
+        {
+          "body": {
+            "messages": [
+              {
+                "@type": "/cosmos.staking.v1beta1.MsgCreateValidator",
+                "description": {
+                  "moniker": "danku_zone w/ DAIC",
+                  "identity": "C92C6965D89F07A3",
+                  "website": "https://daic.capital/danku_zone/",
+                  "security_contact": "office@daic.capital",
+                  "details": "The official validator node from danku_r (YouTube, Twitter, Medium) run by DAIC (https://t.me/validator_danku_DAIC)"
+                },
+                "commission": {
+                  "rate": "0.050000000000000000",
+                  "max_rate": "0.100000000000000000",
+                  "max_change_rate": "0.010000000000000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "",
+                "validator_address": "sedavaloper1rp0kky2annjhumvxcc704jsswps8w6asg08uqe",
+                "pubkey": {
+                  "@type": "/cosmos.crypto.ed25519.PubKey",
+                  "key": "iDGTP+x807Ao35s/QqyJZa6aa0yD/B9yVkkUjtWSHYI="
+                },
+                "value": {
+                  "denom": "aseda",
+                  "amount": "1000000000000000000000000"
+                }
+              }
+            ],
+            "memo": "a6a6f924bf8a88e2d2d6ace0031e6844951712a9@49.13.23.83:26656",
+            "timeout_height": "0",
+            "extension_options": [],
+            "non_critical_extension_options": []
+          },
+          "auth_info": {
+            "signer_infos": [
+              {
+                "public_key": {
+                  "@type": "/cosmos.crypto.secp256k1.PubKey",
+                  "key": "A4v6u+DNza2rndiz2mABxNslDwOpGpDbtKwE2enOt+pH"
+                },
+                "mode_info": {
+                  "single": {
+                    "mode": "SIGN_MODE_DIRECT"
+                  }
+                },
+                "sequence": "0"
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas_limit": "200000",
+              "payer": "",
+              "granter": ""
+            },
+            "tip": null
+          },
+          "signatures": [
+            "hOQIGoKHD+uc4emk0DW9gFmaS3/WdebJsYQT2TTM0+Bew2xQX5TMqTu/MSi/D/y0Kxj2A6KXY9dXa4ZJRkmvGg=="
           ]
         },
         {
@@ -952,7 +1342,7 @@
         "code_upload_access": {
           "permission": "AnyOfAddresses",
           "addresses": [
-            "seda1dlszg2sst9r69my4f84l3mj66zxcf3umcgujys30t84srg95dgvsahaqzm"
+            "seda1afk9zr2hn2jsac63h4hm60vl9z3e5u69gndzf7c99cqge3vzwjzs026662"
           ]
         },
         "instantiate_default_permission": "AnyOfAddresses"
