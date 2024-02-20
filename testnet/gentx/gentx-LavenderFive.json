@@ -1,0 +1,62 @@
+{
+  "body": {
+    "messages": [
+      {
+        "@type": "/cosmos.staking.v1beta1.MsgCreateValidator",
+        "description": {
+          "moniker": " Lavender.Five Nodes 🐝",
+          "identity": "",
+          "website": "https://www.lavenderfive.com/",
+          "security_contact": "security@lavenderfive.com",
+          "details": "Fortifying crypto networks with Horcrux security, slash insurance, and open source contributions. Connect with us at https://linktr.ee/lavenderfive."
+        },
+        "commission": {
+          "rate": "0.050000000000000000",
+          "max_rate": "0.100000000000000000",
+          "max_change_rate": "0.050000000000000000"
+        },
+        "min_self_delegation": "1",
+        "delegator_address": "",
+        "validator_address": "sedavaloper14qekdkj2nmmwea4ufg9n002a3pud23y8c65gfg",
+        "pubkey": {
+          "@type": "/cosmos.crypto.ed25519.PubKey",
+          "key": "S/948HGxyCtgXNpXIA0MeE/PeHD45TD5T7g1fS2OuD4="
+        },
+        "value": {
+          "denom": "aseda",
+          "amount": "1000000000000000000000000"
+        }
+      }
+    ],
+    "memo": "ee81a286a8e4e30025ef22c998c9b3773ed78536@192.168.1.151:26656",
+    "timeout_height": "0",
+    "extension_options": [],
+    "non_critical_extension_options": []
+  },
+  "auth_info": {
+    "signer_infos": [
+      {
+        "public_key": {
+          "@type": "/cosmos.crypto.secp256k1.PubKey",
+          "key": "AgDrjXJ1+/lwJdf+fekEXKwLpA30N7F/Z3ESi/Sn7Rw4"
+        },
+        "mode_info": {
+          "single": {
+            "mode": "SIGN_MODE_DIRECT"
+          }
+        },
+        "sequence": "0"
+      }
+    ],
+    "fee": {
+      "amount": [],
+      "gas_limit": "200000",
+      "payer": "",
+      "granter": ""
+    },
+    "tip": null
+  },
+  "signatures": [
+    "+bF6Tn/RIH8sqj4dxtYANVfejqloaFEzoaMao1snd8USbgyJULaxSC0r8cKFcfZXZeOa16yThd4OPupBGFkDog=="
+  ]
+}
