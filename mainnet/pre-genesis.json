@@ -102,44 +102,58 @@
         },
         {
           "@type": "/cosmos.auth.v1beta1.BaseAccount",
-          "address": "seda1vn90z457kvhv8mxk6hy4cdlpf7uta67tlj3p89",
+          "address": "seda1v2z5t9aeysuhpa25uhfseyld8lw34w9xw77kt9",
           "pub_key": null,
           "account_number": "12",
           "sequence": "0"
         },
         {
           "@type": "/cosmos.auth.v1beta1.BaseAccount",
-          "address": "seda1ty77yxnfj4v6w0ahp8pq8tc79kaptvlky0al56",
+          "address": "seda1f8wvqygky3y0nd09l7wsxzgs2ee28zwjdsgm49",
           "pub_key": null,
           "account_number": "13",
           "sequence": "0"
         },
         {
           "@type": "/cosmos.auth.v1beta1.BaseAccount",
-          "address": "seda15zwsa0d6q8f77szms5knaux6mhr45t3tj883pr",
+          "address": "seda1vn90z457kvhv8mxk6hy4cdlpf7uta67tlj3p89",
           "pub_key": null,
           "account_number": "14",
           "sequence": "0"
         },
         {
           "@type": "/cosmos.auth.v1beta1.BaseAccount",
-          "address": "seda1afk9zr2hn2jsac63h4hm60vl9z3e5u69gndzf7c99cqge3vzwjzs026662",
+          "address": "seda1ty77yxnfj4v6w0ahp8pq8tc79kaptvlky0al56",
           "pub_key": null,
           "account_number": "15",
           "sequence": "0"
         },
         {
           "@type": "/cosmos.auth.v1beta1.BaseAccount",
-          "address": "seda1dlszg2sst9r69my4f84l3mj66zxcf3umcgujys30t84srg95dgvsahaqzm",
+          "address": "seda15zwsa0d6q8f77szms5knaux6mhr45t3tj883pr",
           "pub_key": null,
           "account_number": "16",
           "sequence": "0"
         },
         {
           "@type": "/cosmos.auth.v1beta1.BaseAccount",
-          "address": "seda1c799jddmlz7segvg6jrw6w2k6svwafganjdznard3tc74n7td7rqt389vg",
+          "address": "seda1afk9zr2hn2jsac63h4hm60vl9z3e5u69gndzf7c99cqge3vzwjzs026662",
           "pub_key": null,
           "account_number": "17",
+          "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "seda1dlszg2sst9r69my4f84l3mj66zxcf3umcgujys30t84srg95dgvsahaqzm",
+          "pub_key": null,
+          "account_number": "18",
+          "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "seda1c799jddmlz7segvg6jrw6w2k6svwafganjdznard3tc74n7td7rqt389vg",
+          "pub_key": null,
+          "account_number": "19",
           "sequence": "0"
         }
       ]
@@ -190,6 +204,15 @@
           ]
         },
         {
+          "address": "seda1f8wvqygky3y0nd09l7wsxzgs2ee28zwjdsgm49",
+          "coins": [
+            {
+              "denom": "aseda",
+              "amount": "500000000000000000000"
+            }
+          ]
+        },
+        {
           "address": "seda12k80y3nrsu5v8qkg3skercw8flfl7k0kngczfh",
           "coins": [
             {
@@ -209,6 +232,15 @@
         },
         {
           "address": "seda1ty77yxnfj4v6w0ahp8pq8tc79kaptvlky0al56",
+          "coins": [
+            {
+              "denom": "aseda",
+              "amount": "500000000000000000000"
+            }
+          ]
+        },
+        {
+          "address": "seda1v2z5t9aeysuhpa25uhfseyld8lw34w9xw77kt9",
           "coins": [
             {
               "denom": "aseda",
@@ -443,7 +475,7 @@
           "metadata": "Security Group",
           "version": "1",
           "total_weight": "15",
-          "created_at": "2024-04-15T17:50:02.848569Z"
+          "created_at": "2024-04-15T19:55:12.200894Z"
         },
         {
           "id": "2",
@@ -451,7 +483,7 @@
           "metadata": "Treasury Group",
           "version": "1",
           "total_weight": "5",
-          "created_at": "2024-04-15T17:50:10.369077Z"
+          "created_at": "2024-04-15T19:55:19.722927Z"
         },
         {
           "id": "3",
@@ -459,7 +491,7 @@
           "metadata": "OOA Group",
           "version": "1",
           "total_weight": "3",
-          "created_at": "2024-04-15T17:50:25.404969Z"
+          "created_at": "2024-04-15T19:55:34.752302Z"
         }
       ],
       "group_members": [
@@ -469,7 +501,7 @@
             "address": "seda1pl5chwjy8jujd0fxkserhxhytdqerxd46tjkvr",
             "weight": "3",
             "metadata": "",
-            "added_at": "2024-04-15T17:50:02.848569Z"
+            "added_at": "2024-04-15T19:55:12.200894Z"
           }
         },
         {
@@ -478,7 +510,7 @@
             "address": "seda18nypruuu8asruskvc962revz07s9msggrr75dx",
             "weight": "1",
             "metadata": "",
-            "added_at": "2024-04-15T17:50:02.848569Z"
+            "added_at": "2024-04-15T19:55:12.200894Z"
           }
         },
         {
@@ -487,7 +519,7 @@
             "address": "seda185ccxhtmcfs8w9kn525vm2j9hf6k0zr652ml4p",
             "weight": "1",
             "metadata": "",
-            "added_at": "2024-04-15T17:50:02.848569Z"
+            "added_at": "2024-04-15T19:55:12.200894Z"
           }
         },
         {
@@ -496,7 +528,7 @@
             "address": "seda12k80y3nrsu5v8qkg3skercw8flfl7k0kngczfh",
             "weight": "1",
             "metadata": "",
-            "added_at": "2024-04-15T17:50:02.848569Z"
+            "added_at": "2024-04-15T19:55:12.200894Z"
           }
         },
         {
@@ -505,7 +537,7 @@
             "address": "seda127k9menrqqmfns33huplcghgpyg2ktm8n4f4ah",
             "weight": "3",
             "metadata": "",
-            "added_at": "2024-04-15T17:50:02.848569Z"
+            "added_at": "2024-04-15T19:55:12.200894Z"
           }
         },
         {
@@ -514,7 +546,7 @@
             "address": "seda1val9lv35k8n7yrn4ynhk8twa72uf5x6n6l2gy5",
             "weight": "2",
             "metadata": "",
-            "added_at": "2024-04-15T17:50:02.848569Z"
+            "added_at": "2024-04-15T19:55:12.200894Z"
           }
         },
         {
@@ -523,7 +555,7 @@
             "address": "seda139afw7xva2j2kq6a9d4hj824v48euejk4vcgr6",
             "weight": "1",
             "metadata": "",
-            "added_at": "2024-04-15T17:50:02.848569Z"
+            "added_at": "2024-04-15T19:55:12.200894Z"
           }
         },
         {
@@ -532,7 +564,7 @@
             "address": "seda1n5s0mzyvydjjaelv8hjuygxza7vyhvuwz65jm8",
             "weight": "1",
             "metadata": "",
-            "added_at": "2024-04-15T17:50:02.848569Z"
+            "added_at": "2024-04-15T19:55:12.200894Z"
           }
         },
         {
@@ -541,7 +573,7 @@
             "address": "seda16x40k80h0f669rkedwg95dpy0hv9r582c5jnuf",
             "weight": "2",
             "metadata": "",
-            "added_at": "2024-04-15T17:50:02.848569Z"
+            "added_at": "2024-04-15T19:55:12.200894Z"
           }
         },
         {
@@ -550,7 +582,7 @@
             "address": "seda19ckzzewhl20kzqkeml0gud0hzep7n2f68j6wud",
             "weight": "1",
             "metadata": "",
-            "added_at": "2024-04-15T17:50:10.369077Z"
+            "added_at": "2024-04-15T19:55:19.722927Z"
           }
         },
         {
@@ -559,7 +591,7 @@
             "address": "seda1f8wvqygky3y0nd09l7wsxzgs2ee28zwjdsgm49",
             "weight": "1",
             "metadata": "",
-            "added_at": "2024-04-15T17:50:10.369077Z"
+            "added_at": "2024-04-15T19:55:19.722927Z"
           }
         },
         {
@@ -568,7 +600,7 @@
             "address": "seda1v2z5t9aeysuhpa25uhfseyld8lw34w9xw77kt9",
             "weight": "1",
             "metadata": "",
-            "added_at": "2024-04-15T17:50:10.369077Z"
+            "added_at": "2024-04-15T19:55:19.722927Z"
           }
         },
         {
@@ -577,7 +609,7 @@
             "address": "seda1dwqjdtlv84k49smq33nc3awxzkck4ewu5lc8ek",
             "weight": "1",
             "metadata": "",
-            "added_at": "2024-04-15T17:50:10.369077Z"
+            "added_at": "2024-04-15T19:55:19.722927Z"
           }
         },
         {
@@ -586,7 +618,7 @@
             "address": "seda1hk7fv4j9pq3ger2f70n9thxnqwk5fxdqpc9mm2",
             "weight": "1",
             "metadata": "",
-            "added_at": "2024-04-15T17:50:10.369077Z"
+            "added_at": "2024-04-15T19:55:19.722927Z"
           }
         },
         {
@@ -595,7 +627,7 @@
             "address": "seda1ty77yxnfj4v6w0ahp8pq8tc79kaptvlky0al56",
             "weight": "1",
             "metadata": "",
-            "added_at": "2024-04-15T17:50:25.404969Z"
+            "added_at": "2024-04-15T19:55:34.752302Z"
           }
         },
         {
@@ -604,7 +636,7 @@
             "address": "seda1vn90z457kvhv8mxk6hy4cdlpf7uta67tlj3p89",
             "weight": "1",
             "metadata": "",
-            "added_at": "2024-04-15T17:50:25.404969Z"
+            "added_at": "2024-04-15T19:55:34.752302Z"
           }
         },
         {
@@ -613,7 +645,7 @@
             "address": "seda15zwsa0d6q8f77szms5knaux6mhr45t3tj883pr",
             "weight": "1",
             "metadata": "",
-            "added_at": "2024-04-15T17:50:25.404969Z"
+            "added_at": "2024-04-15T19:55:34.752302Z"
           }
         }
       ],
@@ -633,7 +665,7 @@
               "min_execution_period": "0s"
             }
           },
-          "created_at": "2024-04-15T17:50:10.369077Z"
+          "created_at": "2024-04-15T19:55:19.722927Z"
         },
         {
           "address": "seda1c799jddmlz7segvg6jrw6w2k6svwafganjdznard3tc74n7td7rqt389vg",
@@ -649,7 +681,7 @@
               "min_execution_period": "0s"
             }
           },
-          "created_at": "2024-04-15T17:50:25.404969Z"
+          "created_at": "2024-04-15T19:55:34.752302Z"
         },
         {
           "address": "seda1afk9zr2hn2jsac63h4hm60vl9z3e5u69gndzf7c99cqge3vzwjzs026662",
@@ -665,7 +697,7 @@
               "min_execution_period": "0s"
             }
           },
-          "created_at": "2024-04-15T17:50:02.848569Z"
+          "created_at": "2024-04-15T19:55:12.200894Z"
         }
       ],
       "proposal_seq": "0",
@@ -798,7 +830,7 @@
         "code_upload_access": {
           "permission": "AnyOfAddresses",
           "addresses": [
-            "seda1c799jddmlz7segvg6jrw6w2k6svwafganjdznard3tc74n7td7rqt389vg"
+            "seda1afk9zr2hn2jsac63h4hm60vl9z3e5u69gndzf7c99cqge3vzwjzs026662"
           ]
         },
         "instantiate_default_permission": "AnyOfAddresses"
