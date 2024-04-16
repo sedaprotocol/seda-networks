@@ -102,7 +102,7 @@
         },
         {
           "@type": "/cosmos.auth.v1beta1.BaseAccount",
-          "address": "seda1v2z5t9aeysuhpa25uhfseyld8lw34w9xw77kt9",
+          "address": "seda165wrchr7ytf74mdtl4cmlfh7sawuk6l726wye2",
           "pub_key": null,
           "account_number": "12",
           "sequence": "0"
@@ -155,6 +155,41 @@
           "pub_key": null,
           "account_number": "19",
           "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "seda1zekkwess8sfyerqs9qw48kwazl2lh49kwzh6vm",
+          "pub_key": null,
+          "account_number": "20",
+          "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "seda1krxrclwltudexg5tu4turr3wtxu7mvwnc52k90",
+          "pub_key": null,
+          "account_number": "21",
+          "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "seda1z0sxyr84knxnt4qzvykr0ewv0qqmfjgmfw6egh",
+          "pub_key": null,
+          "account_number": "22",
+          "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "seda1e8rcfr6g483snjn0ce3cae4ppg4jqre6nzg0j4",
+          "pub_key": null,
+          "account_number": "23",
+          "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "seda140l6y2gp3gxvay6qtn70re7z2s0gn57z6hlu9q",
+          "pub_key": null,
+          "account_number": "24",
+          "sequence": "0"
         }
       ]
     },
@@ -173,6 +208,24 @@
             {
               "denom": "aseda",
               "amount": "500000000000000000000"
+            }
+          ]
+        },
+        {
+          "address": "seda1z0sxyr84knxnt4qzvykr0ewv0qqmfjgmfw6egh",
+          "coins": [
+            {
+              "denom": "aseda",
+              "amount": "5000000000000000000000"
+            }
+          ]
+        },
+        {
+          "address": "seda1zekkwess8sfyerqs9qw48kwazl2lh49kwzh6vm",
+          "coins": [
+            {
+              "denom": "aseda",
+              "amount": "5000000000000000000000"
             }
           ]
         },
@@ -240,7 +293,7 @@
           ]
         },
         {
-          "address": "seda1v2z5t9aeysuhpa25uhfseyld8lw34w9xw77kt9",
+          "address": "seda165wrchr7ytf74mdtl4cmlfh7sawuk6l726wye2",
           "coins": [
             {
               "denom": "aseda",
@@ -312,6 +365,24 @@
           ]
         },
         {
+          "address": "seda140l6y2gp3gxvay6qtn70re7z2s0gn57z6hlu9q",
+          "coins": [
+            {
+              "denom": "aseda",
+              "amount": "5000000000000000000000"
+            }
+          ]
+        },
+        {
+          "address": "seda1krxrclwltudexg5tu4turr3wtxu7mvwnc52k90",
+          "coins": [
+            {
+              "denom": "aseda",
+              "amount": "5000000000000000000000"
+            }
+          ]
+        },
+        {
           "address": "seda1hk7fv4j9pq3ger2f70n9thxnqwk5fxdqpc9mm2",
           "coins": [
             {
@@ -326,6 +397,15 @@
             {
               "denom": "aseda",
               "amount": "326523362554365000000000000"
+            }
+          ]
+        },
+        {
+          "address": "seda1e8rcfr6g483snjn0ce3cae4ppg4jqre6nzg0j4",
+          "coins": [
+            {
+              "denom": "aseda",
+              "amount": "5000000000000000000000"
             }
           ]
         },
@@ -387,27 +467,27 @@
     "consensus": null,
     "crisis": {
       "constant_fee": {
-        "denom": "aseda",
-        "amount": "10000000000000000000000"
+        "amount": "10000000000000000000000",
+        "denom": "aseda"
       }
     },
     "distribution": {
-      "params": {
-        "community_tax": "0.000000000000000000",
-        "base_proposer_reward": "0.010000000000000000",
-        "bonus_proposer_reward": "0.040000000000000000",
-        "withdraw_addr_enabled": true
-      },
+      "delegator_starting_infos": [],
+      "delegator_withdraw_infos": [],
       "fee_pool": {
         "community_pool": []
       },
-      "delegator_withdraw_infos": [],
-      "previous_proposer": "",
       "outstanding_rewards": [],
+      "params": {
+        "base_proposer_reward": "0.010000000000000000",
+        "bonus_proposer_reward": "0.040000000000000000",
+        "community_tax": "0.000000000000000000",
+        "withdraw_addr_enabled": true
+      },
+      "previous_proposer": "",
       "validator_accumulated_commissions": [],
-      "validator_historical_rewards": [],
       "validator_current_rewards": [],
-      "delegator_starting_infos": [],
+      "validator_historical_rewards": [],
       "validator_slash_events": []
     },
     "evidence": {
@@ -417,287 +497,598 @@
       "allowances": []
     },
     "feeibc": {
-      "identified_fees": [],
       "fee_enabled_channels": [],
-      "registered_payees": [],
+      "forward_relayers": [],
+      "identified_fees": [],
       "registered_counterparty_payees": [],
-      "forward_relayers": []
+      "registered_payees": []
     },
     "genutil": {
-      "gen_txs": []
+      "gen_txs": [
+        {
+          "body": {
+            "messages": [
+              {
+                "@type": "/cosmos.staking.v1beta1.MsgCreateValidator",
+                "description": {
+                  "moniker": "RHINO",
+                  "identity": "59C635D1CD02FEEC",
+                  "website": "https://rhinostake.com",
+                  "security_contact": "support@rhinostake.com",
+                  "details": "An Active, Independent and Secure Blockchain Validator. We deliver redundant and geo-distributed infrastructure at-scale for Aptos, Chainlink, Ethereum, and Cosmos"
+                },
+                "commission": {
+                  "rate": "0.050000000000000000",
+                  "max_rate": "0.200000000000000000",
+                  "max_change_rate": "0.010000000000000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "",
+                "validator_address": "sedavaloper1zekkwess8sfyerqs9qw48kwazl2lh49k950phz",
+                "pubkey": {
+                  "@type": "/cosmos.crypto.ed25519.PubKey",
+                  "key": "uqOfELSWu1GdZGv49x9KNSHWSPemAFmHTSdzWpUCGu0="
+                },
+                "value": {
+                  "denom": "aseda",
+                  "amount": "5000000000000000000000"
+                }
+              }
+            ],
+            "memo": "a49e41f813f7906a3269c055e250ea84bca7b573@192.168.100.107:26656",
+            "timeout_height": "0",
+            "extension_options": [],
+            "non_critical_extension_options": []
+          },
+          "auth_info": {
+            "signer_infos": [
+              {
+                "public_key": {
+                  "@type": "/cosmos.crypto.secp256k1.PubKey",
+                  "key": "AufmlosNLETdpjSLJzuNqxY2WN8ubBtCUFS7Vl9Iqtw9"
+                },
+                "mode_info": {
+                  "single": {
+                    "mode": "SIGN_MODE_DIRECT"
+                  }
+                },
+                "sequence": "0"
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas_limit": "200000",
+              "payer": "",
+              "granter": ""
+            },
+            "tip": null
+          },
+          "signatures": [
+            "N8OvCVOdUyb/XvGKrl+Yse979qTSaAU9g2BT3yzYXCt69ajJDz5GPTBfJ1te3UqPC/CiZOr1CXxVLh66ajHPNg=="
+          ]
+        },
+        {
+          "body": {
+            "messages": [
+              {
+                "@type": "/cosmos.staking.v1beta1.MsgCreateValidator",
+                "description": {
+                  "moniker": "WhisperNode 🤐",
+                  "identity": "C99B3A6836BF0CB8",
+                  "website": "https://REStake.WhisperNode.com/seda",
+                  "security_contact": "security@whispernode.com",
+                  "details": "WhisperNode operates robust, high up-time validators across the Cosmos ecosystem. Auto-compound your rewards with our REStake app. Join our Discord: https://discord.gg/4E5KZsRtjE / tweet @ https://twitter.com/WhisperNode 🐦"
+                },
+                "commission": {
+                  "rate": "0.050000000000000000",
+                  "max_rate": "0.200000000000000000",
+                  "max_change_rate": "0.010000000000000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "",
+                "validator_address": "sedavaloper1krxrclwltudexg5tu4turr3wtxu7mvwnnzjd7k",
+                "pubkey": {
+                  "@type": "/cosmos.crypto.ed25519.PubKey",
+                  "key": "UWwves6qIj7wTGSRCs+JLxbdFDgcdMFkerjc17/1jYg="
+                },
+                "value": {
+                  "denom": "aseda",
+                  "amount": "5000000000000000000000"
+                }
+              }
+            ],
+            "memo": "0a69b6b76a5395a9235759b2f71cb108972d3741@65.21.192.115:26656",
+            "timeout_height": "0",
+            "extension_options": [],
+            "non_critical_extension_options": []
+          },
+          "auth_info": {
+            "signer_infos": [
+              {
+                "public_key": {
+                  "@type": "/cosmos.crypto.secp256k1.PubKey",
+                  "key": "AxA20a8mcWNOI+0DuNt9t8v/cQp/naNhGI6/ANKxKG0U"
+                },
+                "mode_info": {
+                  "single": {
+                    "mode": "SIGN_MODE_DIRECT"
+                  }
+                },
+                "sequence": "0"
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas_limit": "200000",
+              "payer": "",
+              "granter": ""
+            },
+            "tip": null
+          },
+          "signatures": [
+            "NlO1nJ8vC5j4gATW2d168cTY1JgyHYCmPeOnfH0KhZUvj/qx4yCduZcK0sOcNh/Qhl6nQuHKU0nuGli1ndeeQQ=="
+          ]
+        },
+        {
+          "body": {
+            "messages": [
+              {
+                "@type": "/cosmos.staking.v1beta1.MsgCreateValidator",
+                "description": {
+                  "moniker": "Coinage x DAIC",
+                  "identity": "C92C6965D89F07A3",
+                  "website": "https://daic.capital",
+                  "security_contact": "office@daic.capital",
+                  "details": "The official validator node from Coinage (Coinage.Media) run by DAIC (https://daic.capital/telegram)"
+                },
+                "commission": {
+                  "rate": "0.050000000000000000",
+                  "max_rate": "0.100000000000000000",
+                  "max_change_rate": "0.010000000000000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "",
+                "validator_address": "sedavaloper1z0sxyr84knxnt4qzvykr0ewv0qqmfjgmzczznw",
+                "pubkey": {
+                  "@type": "/cosmos.crypto.ed25519.PubKey",
+                  "key": "ZP3851MDKW9LgEeJTWAqv745uv3DozaRIHipPwSDSrg="
+                },
+                "value": {
+                  "denom": "aseda",
+                  "amount": "5000000000000000000000"
+                }
+              }
+            ],
+            "memo": "f59950e276d9b2159820f9910e751c276d70ef7d@88.198.178.250:26656",
+            "timeout_height": "0",
+            "extension_options": [],
+            "non_critical_extension_options": []
+          },
+          "auth_info": {
+            "signer_infos": [
+              {
+                "public_key": {
+                  "@type": "/cosmos.crypto.secp256k1.PubKey",
+                  "key": "An95S6WZhIKwkNKJze5JFsueUviOqAeJpiZ5o6FH0on5"
+                },
+                "mode_info": {
+                  "single": {
+                    "mode": "SIGN_MODE_DIRECT"
+                  }
+                },
+                "sequence": "0"
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas_limit": "200000",
+              "payer": "",
+              "granter": ""
+            },
+            "tip": null
+          },
+          "signatures": [
+            "i0dKPFqQj1z5S9dQbmG0iAsn3TN0BCUWOlVIWhv769R5Zj27vARyX18jkwnqB9lvVTYfbTHTTG/vA0uZfanMqQ=="
+          ]
+        },
+        {
+          "body": {
+            "messages": [
+              {
+                "@type": "/cosmos.staking.v1beta1.MsgCreateValidator",
+                "description": {
+                  "moniker": "polkachu.com",
+                  "identity": "0A6AF02D1557E5B4",
+                  "website": "https://polkachu.com",
+                  "security_contact": "hello@polkachu.com",
+                  "details": "Polkachu is the trusted staking service provider for blockchain projects. 100% refund for downtime slash. Contact us at hello@polkachu.com"
+                },
+                "commission": {
+                  "rate": "0.050000000000000000",
+                  "max_rate": "0.100000000000000000",
+                  "max_change_rate": "0.050000000000000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "",
+                "validator_address": "sedavaloper1e8rcfr6g483snjn0ce3cae4ppg4jqre6c5s5fv",
+                "pubkey": {
+                  "@type": "/cosmos.crypto.ed25519.PubKey",
+                  "key": "s30fIuEMz2UpwHosajZF893NVuK7O/VP86+vtpABckM="
+                },
+                "value": {
+                  "denom": "aseda",
+                  "amount": "5000000000000000000000"
+                }
+              }
+            ],
+            "memo": "27c5dfb8b781a4f57c35ddd25de026d8574f04f1@65.108.71.137:26656",
+            "timeout_height": "0",
+            "extension_options": [],
+            "non_critical_extension_options": []
+          },
+          "auth_info": {
+            "signer_infos": [
+              {
+                "public_key": {
+                  "@type": "/cosmos.crypto.secp256k1.PubKey",
+                  "key": "A4ros7p+RuZeaN5l6loXBp0qUZnerogshQepjpl9wfQL"
+                },
+                "mode_info": {
+                  "single": {
+                    "mode": "SIGN_MODE_DIRECT"
+                  }
+                },
+                "sequence": "0"
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas_limit": "200000",
+              "payer": "",
+              "granter": ""
+            },
+            "tip": null
+          },
+          "signatures": [
+            "KEJyi9ICwhFRl3QtTz7YXQ4b1cSDl0wnh5nuMYuFU9MyaGVhvdQGxhR2zdFjboAsrbusb5sR6GI7X3jI3YKiLQ=="
+          ]
+        },
+        {
+          "body": {
+            "messages": [
+              {
+                "@type": "/cosmos.staking.v1beta1.MsgCreateValidator",
+                "description": {
+                  "moniker": " Lavender.Five Nodes 🐝",
+                  "identity": "F87ADDB700C0CC94",
+                  "website": "https://www.lavenderfive.com/",
+                  "security_contact": "security@lavenderfive.com",
+                  "details": "Fortifying crypto networks with Horcrux security, slash insurance, and open source contributions. Connect with us at https://linktr.ee/lavenderfive."
+                },
+                "commission": {
+                  "rate": "0.050000000000000000",
+                  "max_rate": "0.100000000000000000",
+                  "max_change_rate": "0.050000000000000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "",
+                "validator_address": "sedavaloper140l6y2gp3gxvay6qtn70re7z2s0gn57z3p887e",
+                "pubkey": {
+                  "@type": "/cosmos.crypto.ed25519.PubKey",
+                  "key": "d3p5bZbAKwSn4JSLJKNz0xotDUcp8v1jsNd761hksRU="
+                },
+                "value": {
+                  "denom": "aseda",
+                  "amount": "5000000000000000000000"
+                }
+              }
+            ],
+            "memo": "928873e42eb9cd0ed82e6b9ca0e24563489c9778@192.168.68.176:26656",
+            "timeout_height": "0",
+            "extension_options": [],
+            "non_critical_extension_options": []
+          },
+          "auth_info": {
+            "signer_infos": [
+              {
+                "public_key": {
+                  "@type": "/cosmos.crypto.secp256k1.PubKey",
+                  "key": "AgAxffwFDTjrK5UoAmT9aVOuI7CGxe3T5Wsxx2kWWhJB"
+                },
+                "mode_info": {
+                  "single": {
+                    "mode": "SIGN_MODE_LEGACY_AMINO_JSON"
+                  }
+                },
+                "sequence": "0"
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas_limit": "200000",
+              "payer": "",
+              "granter": ""
+            },
+            "tip": null
+          },
+          "signatures": [
+            "k2q+grGuSHV8k72+I9t+eNVeMYmICq/nzQX2NfXAgmc0XQF+ywAgaSXyfkE7UePJwr1F52BkHrVwzzdfP8sFFg=="
+          ]
+        }
+      ]
     },
     "gov": {
-      "starting_proposal_id": "1",
-      "deposits": [],
-      "votes": [],
-      "proposals": [],
+      "constitution": "",
       "deposit_params": null,
-      "voting_params": {
-        "voting_period": "432000s"
-      },
-      "tally_params": null,
+      "deposits": [],
       "params": {
-        "min_deposit": [
+        "burn_proposal_deposit_prevote": false,
+        "burn_vote_quorum": false,
+        "burn_vote_veto": true,
+        "expedited_min_deposit": [
           {
-            "denom": "aseda",
-            "amount": "10000000"
+            "amount": "50000000000000000000000",
+            "denom": "aseda"
           }
         ],
+        "expedited_threshold": "0.667000000000000000",
+        "expedited_voting_period": "86400s",
         "max_deposit_period": "432000s",
-        "voting_period": "432000s",
+        "min_deposit": [
+          {
+            "amount": "10000000",
+            "denom": "aseda"
+          }
+        ],
+        "min_deposit_ratio": "0.010000000000000000",
+        "min_initial_deposit_ratio": "0.250000000000000000",
+        "proposal_cancel_dest": "",
+        "proposal_cancel_ratio": "0.500000000000000000",
         "quorum": "0.334000000000000000",
         "threshold": "0.500000000000000000",
         "veto_threshold": "0.334000000000000000",
-        "min_initial_deposit_ratio": "0.250000000000000000",
-        "proposal_cancel_ratio": "0.500000000000000000",
-        "proposal_cancel_dest": "",
-        "expedited_voting_period": "86400s",
-        "expedited_threshold": "0.667000000000000000",
-        "expedited_min_deposit": [
-          {
-            "denom": "aseda",
-            "amount": "50000000000000000000000"
-          }
-        ],
-        "burn_vote_quorum": false,
-        "burn_proposal_deposit_prevote": false,
-        "burn_vote_veto": true,
-        "min_deposit_ratio": "0.010000000000000000"
+        "voting_period": "432000s"
       },
-      "constitution": ""
+      "proposals": [],
+      "starting_proposal_id": "1",
+      "tally_params": null,
+      "votes": [],
+      "voting_params": {
+        "voting_period": "432000s"
+      }
     },
     "group": {
-      "group_seq": "3",
-      "groups": [
-        {
-          "id": "1",
-          "admin": "seda1afk9zr2hn2jsac63h4hm60vl9z3e5u69gndzf7c99cqge3vzwjzs026662",
-          "metadata": "Security Group",
-          "version": "1",
-          "total_weight": "15",
-          "created_at": "2024-04-15T19:55:12.200894Z"
-        },
-        {
-          "id": "2",
-          "admin": "seda1dlszg2sst9r69my4f84l3mj66zxcf3umcgujys30t84srg95dgvsahaqzm",
-          "metadata": "Treasury Group",
-          "version": "1",
-          "total_weight": "5",
-          "created_at": "2024-04-15T19:55:19.722927Z"
-        },
-        {
-          "id": "3",
-          "admin": "seda1c799jddmlz7segvg6jrw6w2k6svwafganjdznard3tc74n7td7rqt389vg",
-          "metadata": "OOA Group",
-          "version": "1",
-          "total_weight": "3",
-          "created_at": "2024-04-15T19:55:34.752302Z"
-        }
-      ],
       "group_members": [
         {
           "group_id": "1",
           "member": {
+            "added_at": "2024-04-15T19:55:12.200894Z",
             "address": "seda1pl5chwjy8jujd0fxkserhxhytdqerxd46tjkvr",
-            "weight": "3",
             "metadata": "",
-            "added_at": "2024-04-15T19:55:12.200894Z"
+            "weight": "3"
           }
         },
         {
           "group_id": "1",
           "member": {
+            "added_at": "2024-04-15T19:55:12.200894Z",
             "address": "seda18nypruuu8asruskvc962revz07s9msggrr75dx",
-            "weight": "1",
             "metadata": "",
-            "added_at": "2024-04-15T19:55:12.200894Z"
+            "weight": "1"
           }
         },
         {
           "group_id": "1",
           "member": {
+            "added_at": "2024-04-15T19:55:12.200894Z",
             "address": "seda185ccxhtmcfs8w9kn525vm2j9hf6k0zr652ml4p",
-            "weight": "1",
             "metadata": "",
-            "added_at": "2024-04-15T19:55:12.200894Z"
+            "weight": "1"
           }
         },
         {
           "group_id": "1",
           "member": {
+            "added_at": "2024-04-15T19:55:12.200894Z",
             "address": "seda12k80y3nrsu5v8qkg3skercw8flfl7k0kngczfh",
-            "weight": "1",
             "metadata": "",
-            "added_at": "2024-04-15T19:55:12.200894Z"
+            "weight": "1"
           }
         },
         {
           "group_id": "1",
           "member": {
+            "added_at": "2024-04-15T19:55:12.200894Z",
             "address": "seda127k9menrqqmfns33huplcghgpyg2ktm8n4f4ah",
-            "weight": "3",
             "metadata": "",
-            "added_at": "2024-04-15T19:55:12.200894Z"
+            "weight": "3"
           }
         },
         {
           "group_id": "1",
           "member": {
+            "added_at": "2024-04-15T19:55:12.200894Z",
             "address": "seda1val9lv35k8n7yrn4ynhk8twa72uf5x6n6l2gy5",
-            "weight": "2",
             "metadata": "",
-            "added_at": "2024-04-15T19:55:12.200894Z"
+            "weight": "2"
           }
         },
         {
           "group_id": "1",
           "member": {
+            "added_at": "2024-04-15T19:55:12.200894Z",
             "address": "seda139afw7xva2j2kq6a9d4hj824v48euejk4vcgr6",
-            "weight": "1",
             "metadata": "",
-            "added_at": "2024-04-15T19:55:12.200894Z"
+            "weight": "1"
           }
         },
         {
           "group_id": "1",
           "member": {
+            "added_at": "2024-04-15T19:55:12.200894Z",
             "address": "seda1n5s0mzyvydjjaelv8hjuygxza7vyhvuwz65jm8",
-            "weight": "1",
             "metadata": "",
-            "added_at": "2024-04-15T19:55:12.200894Z"
+            "weight": "1"
           }
         },
         {
           "group_id": "1",
           "member": {
+            "added_at": "2024-04-15T19:55:12.200894Z",
             "address": "seda16x40k80h0f669rkedwg95dpy0hv9r582c5jnuf",
-            "weight": "2",
             "metadata": "",
-            "added_at": "2024-04-15T19:55:12.200894Z"
+            "weight": "2"
           }
         },
         {
           "group_id": "2",
           "member": {
+            "added_at": "2024-04-15T19:55:19.722927Z",
             "address": "seda19ckzzewhl20kzqkeml0gud0hzep7n2f68j6wud",
-            "weight": "1",
             "metadata": "",
-            "added_at": "2024-04-15T19:55:19.722927Z"
+            "weight": "1"
           }
         },
         {
           "group_id": "2",
           "member": {
+            "added_at": "2024-04-15T19:55:19.722927Z",
             "address": "seda1f8wvqygky3y0nd09l7wsxzgs2ee28zwjdsgm49",
-            "weight": "1",
             "metadata": "",
-            "added_at": "2024-04-15T19:55:19.722927Z"
+            "weight": "1"
           }
         },
         {
           "group_id": "2",
           "member": {
-            "address": "seda1v2z5t9aeysuhpa25uhfseyld8lw34w9xw77kt9",
-            "weight": "1",
+            "added_at": "2024-04-15T19:55:19.722927Z",
+            "address": "seda165wrchr7ytf74mdtl4cmlfh7sawuk6l726wye2",
             "metadata": "",
-            "added_at": "2024-04-15T19:55:19.722927Z"
+            "weight": "1"
           }
         },
         {
           "group_id": "2",
           "member": {
+            "added_at": "2024-04-15T19:55:19.722927Z",
             "address": "seda1dwqjdtlv84k49smq33nc3awxzkck4ewu5lc8ek",
-            "weight": "1",
             "metadata": "",
-            "added_at": "2024-04-15T19:55:19.722927Z"
+            "weight": "1"
           }
         },
         {
           "group_id": "2",
           "member": {
+            "added_at": "2024-04-15T19:55:19.722927Z",
             "address": "seda1hk7fv4j9pq3ger2f70n9thxnqwk5fxdqpc9mm2",
-            "weight": "1",
             "metadata": "",
-            "added_at": "2024-04-15T19:55:19.722927Z"
+            "weight": "1"
           }
         },
         {
           "group_id": "3",
           "member": {
+            "added_at": "2024-04-15T19:55:34.752302Z",
             "address": "seda1ty77yxnfj4v6w0ahp8pq8tc79kaptvlky0al56",
-            "weight": "1",
             "metadata": "",
-            "added_at": "2024-04-15T19:55:34.752302Z"
+            "weight": "1"
           }
         },
         {
           "group_id": "3",
           "member": {
+            "added_at": "2024-04-15T19:55:34.752302Z",
             "address": "seda1vn90z457kvhv8mxk6hy4cdlpf7uta67tlj3p89",
-            "weight": "1",
             "metadata": "",
-            "added_at": "2024-04-15T19:55:34.752302Z"
+            "weight": "1"
           }
         },
         {
           "group_id": "3",
           "member": {
+            "added_at": "2024-04-15T19:55:34.752302Z",
             "address": "seda15zwsa0d6q8f77szms5knaux6mhr45t3tj883pr",
-            "weight": "1",
             "metadata": "",
-            "added_at": "2024-04-15T19:55:34.752302Z"
+            "weight": "1"
           }
         }
       ],
-      "group_policy_seq": "3",
       "group_policies": [
         {
           "address": "seda1dlszg2sst9r69my4f84l3mj66zxcf3umcgujys30t84srg95dgvsahaqzm",
-          "group_id": "2",
           "admin": "seda1dlszg2sst9r69my4f84l3mj66zxcf3umcgujys30t84srg95dgvsahaqzm",
-          "metadata": "{\"name\":\"Treasury Group Policy\",\"description\":\"\"}",
-          "version": "1",
+          "created_at": "2024-04-15T19:55:19.722927Z",
           "decision_policy": {
             "@type": "/cosmos.group.v1.ThresholdDecisionPolicy",
             "threshold": "3",
             "windows": {
-              "voting_period": "604800s",
-              "min_execution_period": "0s"
+              "min_execution_period": "0s",
+              "voting_period": "604800s"
             }
           },
-          "created_at": "2024-04-15T19:55:19.722927Z"
+          "group_id": "2",
+          "metadata": "{\"name\":\"Treasury Group Policy\",\"description\":\"\"}",
+          "version": "1"
         },
         {
           "address": "seda1c799jddmlz7segvg6jrw6w2k6svwafganjdznard3tc74n7td7rqt389vg",
-          "group_id": "3",
           "admin": "seda1c799jddmlz7segvg6jrw6w2k6svwafganjdznard3tc74n7td7rqt389vg",
-          "metadata": "{\"name\":\"OOA Group Policy\",\"description\":\"\"}",
-          "version": "1",
+          "created_at": "2024-04-15T19:55:34.752302Z",
           "decision_policy": {
             "@type": "/cosmos.group.v1.ThresholdDecisionPolicy",
             "threshold": "2",
             "windows": {
-              "voting_period": "604800s",
-              "min_execution_period": "0s"
+              "min_execution_period": "0s",
+              "voting_period": "604800s"
             }
           },
-          "created_at": "2024-04-15T19:55:34.752302Z"
+          "group_id": "3",
+          "metadata": "{\"name\":\"OOA Group Policy\",\"description\":\"\"}",
+          "version": "1"
         },
         {
           "address": "seda1afk9zr2hn2jsac63h4hm60vl9z3e5u69gndzf7c99cqge3vzwjzs026662",
-          "group_id": "1",
           "admin": "seda1afk9zr2hn2jsac63h4hm60vl9z3e5u69gndzf7c99cqge3vzwjzs026662",
-          "metadata": "{\"name\":\"Security Group Policy\",\"description\":\"\"}",
-          "version": "1",
+          "created_at": "2024-04-15T19:55:12.200894Z",
           "decision_policy": {
             "@type": "/cosmos.group.v1.ThresholdDecisionPolicy",
             "threshold": "7",
             "windows": {
-              "voting_period": "604800s",
-              "min_execution_period": "0s"
+              "min_execution_period": "0s",
+              "voting_period": "604800s"
             }
           },
-          "created_at": "2024-04-15T19:55:12.200894Z"
+          "group_id": "1",
+          "metadata": "{\"name\":\"Security Group Policy\",\"description\":\"\"}",
+          "version": "1"
+        }
+      ],
+      "group_policy_seq": "3",
+      "group_seq": "3",
+      "groups": [
+        {
+          "admin": "seda1afk9zr2hn2jsac63h4hm60vl9z3e5u69gndzf7c99cqge3vzwjzs026662",
+          "created_at": "2024-04-15T19:55:12.200894Z",
+          "id": "1",
+          "metadata": "Security Group",
+          "total_weight": "15",
+          "version": "1"
+        },
+        {
+          "admin": "seda1dlszg2sst9r69my4f84l3mj66zxcf3umcgujys30t84srg95dgvsahaqzm",
+          "created_at": "2024-04-15T19:55:19.722927Z",
+          "id": "2",
+          "metadata": "Treasury Group",
+          "total_weight": "5",
+          "version": "1"
+        },
+        {
+          "admin": "seda1c799jddmlz7segvg6jrw6w2k6svwafganjdznard3tc74n7td7rqt389vg",
+          "created_at": "2024-04-15T19:55:34.752302Z",
+          "id": "3",
+          "metadata": "OOA Group",
+          "total_weight": "3",
+          "version": "1"
         }
       ],
       "proposal_seq": "0",
@@ -705,43 +1096,43 @@
       "votes": []
     },
     "ibc": {
-      "client_genesis": {
-        "clients": [],
-        "clients_consensus": [],
-        "clients_metadata": [],
-        "params": {
-          "allowed_clients": [
-            "*"
-          ]
-        },
-        "create_localhost": false,
-        "next_client_sequence": "0"
-      },
-      "connection_genesis": {
-        "connections": [],
-        "client_connection_paths": [],
-        "next_connection_sequence": "0",
-        "params": {
-          "max_expected_time_per_block": "30000000000"
-        }
-      },
       "channel_genesis": {
-        "channels": [],
-        "acknowledgements": [],
-        "commitments": [],
-        "receipts": [],
-        "send_sequences": [],
-        "recv_sequences": [],
         "ack_sequences": [],
+        "acknowledgements": [],
+        "channels": [],
+        "commitments": [],
         "next_channel_sequence": "0",
         "params": {
           "upgrade_timeout": {
             "height": {
-              "revision_number": "0",
-              "revision_height": "0"
+              "revision_height": "0",
+              "revision_number": "0"
             },
             "timestamp": "600000000000"
           }
+        },
+        "receipts": [],
+        "recv_sequences": [],
+        "send_sequences": []
+      },
+      "client_genesis": {
+        "clients": [],
+        "clients_consensus": [],
+        "clients_metadata": [],
+        "create_localhost": false,
+        "next_client_sequence": "0",
+        "params": {
+          "allowed_clients": [
+            "*"
+          ]
+        }
+      },
+      "connection_genesis": {
+        "client_connection_paths": [],
+        "connections": [],
+        "next_connection_sequence": "0",
+        "params": {
+          "max_expected_time_per_block": "30000000000"
         }
       }
     },
@@ -749,94 +1140,94 @@
       "controller_genesis_state": {
         "active_channels": [],
         "interchain_accounts": [],
-        "ports": [],
         "params": {
           "controller_enabled": true
-        }
+        },
+        "ports": []
       },
       "host_genesis_state": {
         "active_channels": [],
         "interchain_accounts": [],
-        "port": "icahost",
         "params": {
-          "host_enabled": true,
           "allow_messages": [
             "*"
-          ]
-        }
+          ],
+          "host_enabled": true
+        },
+        "port": "icahost"
       }
     },
     "mint": {
       "minter": {
-        "inflation": "0.000000000000000000",
-        "annual_provisions": "0.000000000000000000"
+        "annual_provisions": "0.000000000000000000",
+        "inflation": "0.000000000000000000"
       },
       "params": {
-        "mint_denom": "aseda",
-        "inflation_rate_change": "0.000000000000000000",
+        "blocks_per_year": "4204800",
+        "goal_bonded": "0.670000000000000000",
         "inflation_max": "0.000000000000000000",
         "inflation_min": "0.000000000000000000",
-        "goal_bonded": "0.670000000000000000",
-        "blocks_per_year": "4204800"
+        "inflation_rate_change": "0.000000000000000000",
+        "mint_denom": "aseda"
       }
     },
     "packetfowardmiddleware": {
+      "in_flight_packets": {},
       "params": {
         "fee_percentage": "0.000000000000000000"
-      },
-      "in_flight_packets": {}
+      }
     },
     "slashing": {
+      "missed_blocks": [],
       "params": {
-        "signed_blocks_window": "10000",
-        "min_signed_per_window": "0.050000000000000000",
         "downtime_jail_duration": "600s",
+        "min_signed_per_window": "0.050000000000000000",
+        "signed_blocks_window": "10000",
         "slash_fraction_double_sign": "0.050000000000000000",
         "slash_fraction_downtime": "0.0001"
       },
-      "signing_infos": [],
-      "missed_blocks": []
+      "signing_infos": []
     },
     "staking": {
-      "params": {
-        "unbonding_time": "1814400s",
-        "max_validators": 100,
-        "max_entries": 7,
-        "historical_entries": 10000,
-        "bond_denom": "aseda",
-        "min_commission_rate": "0.000000000000000000"
-      },
+      "delegations": [],
+      "exported": false,
       "last_total_power": "0",
       "last_validator_powers": [],
-      "validators": [],
-      "delegations": [],
-      "unbonding_delegations": [],
+      "params": {
+        "bond_denom": "aseda",
+        "historical_entries": 10000,
+        "max_entries": 7,
+        "max_validators": 100,
+        "min_commission_rate": "0.000000000000000000",
+        "unbonding_time": "1814400s"
+      },
       "redelegations": [],
-      "exported": false
+      "unbonding_delegations": [],
+      "validators": []
     },
     "transfer": {
-      "port_id": "transfer",
       "denom_traces": [],
       "params": {
-        "send_enabled": true,
-        "receive_enabled": true
+        "receive_enabled": true,
+        "send_enabled": true
       },
+      "port_id": "transfer",
       "total_escrowed": []
     },
     "upgrade": {},
     "vesting": {},
     "wasm": {
+      "codes": [],
+      "contracts": [],
       "params": {
         "code_upload_access": {
-          "permission": "AnyOfAddresses",
           "addresses": [
             "seda1afk9zr2hn2jsac63h4hm60vl9z3e5u69gndzf7c99cqge3vzwjzs026662"
-          ]
+          ],
+          "permission": "AnyOfAddresses"
         },
         "instantiate_default_permission": "AnyOfAddresses"
       },
-      "codes": [],
-      "contracts": [],
       "sequences": []
     }
   },
