@@ -21,9 +21,9 @@ var (
 	/* =================================================== */
 	/*                  Change as needed                   */
 	/* =================================================== */
-	CHAIN_ID    = "seda-1-testnet"
-	WORKING_DIR = "./testnet"
-	BINARY_URL  = "https://github.com/sedaprotocol/seda-chain/releases/download/v0.0.6/sedad-amd64"
+	CHAIN_ID    = "seda-1-dryrun"
+	WORKING_DIR = "./mainnet"
+	BINARY_URL  = "https://github.com/sedaprotocol/seda-chain/releases/download/v0.1.0-rc0/sedad-amd64"
 
 	/* =================================================== */
 	/*         The followings should rarely change         */
@@ -35,8 +35,8 @@ var (
 	PREFIX             = "seda"
 	DENOM              = "aseda"
 	TEST_KEY_NAME      = "test-key"
-	GENESIS_ALLOCATION = "1000000000000000000000000" + DENOM    // 1M SEDA
-	DEFAULT_BOND       = "1000000000000000000000000" + DENOM    // 1M SEDA
+	GENESIS_ALLOCATION = "5000000000000000000000" + DENOM       // 5000 SEDA
+	DEFAULT_BOND       = "5000000000000000000000" + DENOM       // 5000 SEDA
 	MAXBOND            = "600000000000000000000000000000000000" // TO-DO what number to use here?
 )
 
@@ -187,6 +187,9 @@ func main() {
 
 		// copy the gentx file to the node directory
 		err = copyFile(file, filepath.Join(gentxDir, filepath.Base(file)))
+		if err != nil {
+			log.Fatalf("Error copying gentx file to node directory: %s", err)
+		}
 	}
 
 	log.Println("Validating finished...")
