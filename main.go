@@ -3,7 +3,7 @@ package main
 import (
 	"bytes"
 	"encoding/json"
-	"fmt"
+	"flag"
 	"io"
 	"log"
 	"math/big"
@@ -21,9 +21,9 @@ var (
 	/* =================================================== */
 	/*                  Change as needed                   */
 	/* =================================================== */
-	CHAIN_ID    = "seda-1-dryrun"
+	CHAIN_ID    = "seda-1"
 	WORKING_DIR = "./mainnet"
-	BINARY_URL  = "https://github.com/sedaprotocol/seda-chain/releases/download/v0.1.0-rc0/sedad-amd64"
+	BINARY_URL  = "https://github.com/sedaprotocol/seda-chain/releases/download/v0.1.0/sedad-amd64"
 
 	/* =================================================== */
 	/*         The followings should rarely change         */
@@ -34,21 +34,35 @@ var (
 	SEDA_HOME          = filepath.Join(os.Getenv("HOME"), ".sedad")
 	PREFIX             = "seda"
 	DENOM              = "aseda"
-	TEST_KEY_NAME      = "test-key"
-	GENESIS_ALLOCATION = "5000000000000000000000" + DENOM       // 5000 SEDA
-	DEFAULT_BOND       = "5000000000000000000000" + DENOM       // 5000 SEDA
-	MAXBOND            = "600000000000000000000000000000000000" // TO-DO what number to use here?
+	GENESIS_ALLOCATION = "5000000000000000000000" + DENOM // 5000 SEDA
+	DEFAULT_BOND       = "5000000000000000000000" + DENOM // 5000 SEDA
+	MAXBOND            = "5000000000000000000000"         // 5000 SEDA
 )
 
 func main() {
-	log.Println("Downloading binary...")
-	err := downloadFile(BINARY_PATH, BINARY_URL)
-	if err != nil {
-		log.Fatal("Error downloading binary: ", err)
+	generate := flag.Bool("generate-final-genesis", false, "a boolean flag to enable final genesis generation mode")
+	flag.Parse()
+	if *generate {
+		log.Println("Final genesis generation mode enabled - Using local binary")
+
+		_, err := os.Stat(BINARY_PATH)
+		if err != nil {
+			if os.IsNotExist(err) {
+				log.Println("Binary does not exist at", BINARY_PATH)
+			} else {
+				log.Println("Error finding binary:", err)
+			}
+		}
+	} else {
+		log.Println("Downloading binary...")
+		err := downloadFile(BINARY_PATH, BINARY_URL)
+		if err != nil {
+			log.Fatal("Error downloading binary: ", err)
+		}
 	}
 
 	// make binary executable
-	err = os.Chmod(BINARY_PATH, 0755)
+	err := os.Chmod(BINARY_PATH, 0755)
 	if err != nil {
 		log.Fatal("Error making binary executable: ", err)
 	}
@@ -92,7 +106,7 @@ func main() {
 
 	// modify genesis time to be in the past
 	log.Println("Modifying genesis time...")
-	err = modifyGenesisTime(SEDA_HOME+"/config/genesis.json", "2024-01-01T18:00:00Z")
+	originalGenesisTime, err := modifyGenesisTime(SEDA_HOME+"/config/genesis.json", "2024-01-01T18:00:00Z")
 	if err != nil {
 		log.Fatal("Error modifying genesis time: ", err)
 	}
@@ -108,7 +122,7 @@ func main() {
 	if _, err := os.Stat(gentxDir); os.IsNotExist(err) {
 		err := os.Mkdir(gentxDir, 0755)
 		if err != nil {
-			fmt.Println("Error creating directory:", err)
+			log.Println("Error creating directory:", err)
 			return
 		}
 	}
@@ -179,12 +193,6 @@ func main() {
 			}
 		}
 
-		// // create gentx
-		// _, err = exec.Command(BINARY_PATH, "gentx", keyName, DEFAULT_BOND).Output()
-		// if err != nil {
-		// 	log.Fatal("Error creating gentx: ", err)
-		// }
-
 		// copy the gentx file to the node directory
 		err = copyFile(file, filepath.Join(gentxDir, filepath.Base(file)))
 		if err != nil {
@@ -223,6 +231,15 @@ func main() {
 		log.Fatalf("Error checking node status: %v, output: %s", err, output)
 	}
 
+	// revert the genesis time adjustment in the final genesis
+	if *generate {
+		log.Println("Reverting genesis time adjustment...")
+		_, err = modifyGenesisTime(SEDA_HOME+"/config/genesis.json", originalGenesisTime)
+		if err != nil {
+			log.Fatal("Error modifying genesis time: ", err)
+		}
+	}
+
 	log.Println("✅ ✅ ✅ Gentx validation passed successfully...")
 }
 
@@ -256,7 +273,7 @@ func copyFile(src, dst string) error {
 	return nil
 }
 
-func modifyGenesisTime(genesisFileNamePath, timestamp string) error {
+func modifyGenesisTime(genesisFileNamePath, timestamp string) (string, error) {
 	genesisFile, err := os.ReadFile(genesisFileNamePath)
 	if err != nil {
 		log.Fatal(err)
@@ -268,6 +285,7 @@ func modifyGenesisTime(genesisFileNamePath, timestamp string) error {
 		log.Fatal(err)
 	}
 
+	oldTimestamp := genesis["genesis_time"].(string)
 	genesis["genesis_time"] = timestamp
 	newGenesisFile, err := json.MarshalIndent(genesis, "", "  ")
 	if err != nil {
@@ -276,5 +294,5 @@ func modifyGenesisTime(genesisFileNamePath, timestamp string) error {
 
 	err = os.WriteFile(genesisFileNamePath, newGenesisFile, 0644)
 
-	return err
+	return oldTimestamp, err
 }
