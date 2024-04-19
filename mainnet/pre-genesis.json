@@ -754,7 +754,7 @@
         {
           "address": "seda1dlszg2sst9r69my4f84l3mj66zxcf3umcgujys30t84srg95dgvsahaqzm",
           "group_id": "2",
-          "admin": "seda1lyfkj6xwecq3462qa683s78weexhp7d72ku3qf",
+          "admin": "seda1dlszg2sst9r69my4f84l3mj66zxcf3umcgujys30t84srg95dgvsahaqzm",
           "metadata": "{\"name\":\"Treasury Group Policy\",\"description\":\"\"}",
           "version": "1",
           "decision_policy": {
@@ -770,7 +770,7 @@
         {
           "address": "seda1c799jddmlz7segvg6jrw6w2k6svwafganjdznard3tc74n7td7rqt389vg",
           "group_id": "3",
-          "admin": "seda1lyfkj6xwecq3462qa683s78weexhp7d72ku3qf",
+          "admin": "seda1c799jddmlz7segvg6jrw6w2k6svwafganjdznard3tc74n7td7rqt389vg",
           "metadata": "{\"name\":\"OOA Group Policy\",\"description\":\"\"}",
           "version": "1",
           "decision_policy": {
@@ -786,7 +786,7 @@
         {
           "address": "seda1afk9zr2hn2jsac63h4hm60vl9z3e5u69gndzf7c99cqge3vzwjzs026662",
           "group_id": "1",
-          "admin": "seda1lyfkj6xwecq3462qa683s78weexhp7d72ku3qf",
+          "admin": "seda1afk9zr2hn2jsac63h4hm60vl9z3e5u69gndzf7c99cqge3vzwjzs026662",
           "metadata": "{\"name\":\"Security Group Policy\",\"description\":\"\"}",
           "version": "1",
           "decision_policy": {
