@@ -21,9 +21,9 @@ var (
 	/* =================================================== */
 	/*                  Change as needed                   */
 	/* =================================================== */
-	CHAIN_ID    = "seda-1-dryrun"
+	CHAIN_ID    = "seda-1"
 	WORKING_DIR = "./mainnet"
-	BINARY_URL  = "https://github.com/sedaprotocol/seda-chain/releases/download/v0.1.0-rc0/sedad-amd64"
+	BINARY_URL  = "https://github.com/sedaprotocol/seda-chain/releases/download/v0.1.0/sedad-amd64"
 
 	/* =================================================== */
 	/*         The followings should rarely change         */
