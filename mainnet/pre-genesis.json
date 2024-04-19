@@ -1,8 +1,8 @@
 {
   "app_name": "sedad",
-  "app_version": "v0.1.0-rc0",
-  "genesis_time": "2024-04-17T16:00:00Z",
-  "chain_id": "seda-1-dryrun",
+  "app_version": "v0.1.0",
+  "genesis_time": "2024-04-24T16:00:00Z",
+  "chain_id": "seda-1",
   "initial_height": 1,
   "app_hash": null,
   "app_state": {
@@ -81,79 +81,107 @@
         },
         {
           "@type": "/cosmos.auth.v1beta1.BaseAccount",
-          "address": "seda1hk7fv4j9pq3ger2f70n9thxnqwk5fxdqpc9mm2",
+          "address": "seda1mzlmcm3m075hgkklty5ze5vka3mz7lesk9qpv0",
           "pub_key": null,
           "account_number": "9",
           "sequence": "0"
         },
         {
           "@type": "/cosmos.auth.v1beta1.BaseAccount",
-          "address": "seda19ckzzewhl20kzqkeml0gud0hzep7n2f68j6wud",
+          "address": "seda1hk7fv4j9pq3ger2f70n9thxnqwk5fxdqpc9mm2",
           "pub_key": null,
           "account_number": "10",
           "sequence": "0"
         },
         {
           "@type": "/cosmos.auth.v1beta1.BaseAccount",
-          "address": "seda1dwqjdtlv84k49smq33nc3awxzkck4ewu5lc8ek",
+          "address": "seda19ckzzewhl20kzqkeml0gud0hzep7n2f68j6wud",
           "pub_key": null,
           "account_number": "11",
           "sequence": "0"
         },
         {
           "@type": "/cosmos.auth.v1beta1.BaseAccount",
-          "address": "seda1v2z5t9aeysuhpa25uhfseyld8lw34w9xw77kt9",
+          "address": "seda1dwqjdtlv84k49smq33nc3awxzkck4ewu5lc8ek",
           "pub_key": null,
           "account_number": "12",
           "sequence": "0"
         },
         {
           "@type": "/cosmos.auth.v1beta1.BaseAccount",
-          "address": "seda1f8wvqygky3y0nd09l7wsxzgs2ee28zwjdsgm49",
+          "address": "seda165wrchr7ytf74mdtl4cmlfh7sawuk6l726wye2",
           "pub_key": null,
           "account_number": "13",
           "sequence": "0"
         },
         {
           "@type": "/cosmos.auth.v1beta1.BaseAccount",
-          "address": "seda1vn90z457kvhv8mxk6hy4cdlpf7uta67tlj3p89",
+          "address": "seda1ndmkk40r85y7ktmsjke0uvp8vqs29wskvt9tn3",
           "pub_key": null,
           "account_number": "14",
           "sequence": "0"
         },
         {
           "@type": "/cosmos.auth.v1beta1.BaseAccount",
-          "address": "seda1ty77yxnfj4v6w0ahp8pq8tc79kaptvlky0al56",
+          "address": "seda1eslfqglp9868w5x4zkymvtc7ns6xx0za3p0c5h",
           "pub_key": null,
           "account_number": "15",
           "sequence": "0"
         },
         {
           "@type": "/cosmos.auth.v1beta1.BaseAccount",
-          "address": "seda15zwsa0d6q8f77szms5knaux6mhr45t3tj883pr",
+          "address": "seda17qpwql4ft6n6l7r0fy82s587ksq5rdmnsgy5ek",
           "pub_key": null,
           "account_number": "16",
           "sequence": "0"
         },
         {
           "@type": "/cosmos.auth.v1beta1.BaseAccount",
-          "address": "seda1afk9zr2hn2jsac63h4hm60vl9z3e5u69gndzf7c99cqge3vzwjzs026662",
+          "address": "seda1vn90z457kvhv8mxk6hy4cdlpf7uta67tlj3p89",
           "pub_key": null,
           "account_number": "17",
           "sequence": "0"
         },
         {
           "@type": "/cosmos.auth.v1beta1.BaseAccount",
-          "address": "seda1dlszg2sst9r69my4f84l3mj66zxcf3umcgujys30t84srg95dgvsahaqzm",
+          "address": "seda1ty77yxnfj4v6w0ahp8pq8tc79kaptvlky0al56",
           "pub_key": null,
           "account_number": "18",
           "sequence": "0"
         },
         {
           "@type": "/cosmos.auth.v1beta1.BaseAccount",
-          "address": "seda1c799jddmlz7segvg6jrw6w2k6svwafganjdznard3tc74n7td7rqt389vg",
+          "address": "seda15zwsa0d6q8f77szms5knaux6mhr45t3tj883pr",
           "pub_key": null,
           "account_number": "19",
+          "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "seda1ur2hs0qqw0andz2msz3qq72nskg0tfh54rvmun",
+          "pub_key": null,
+          "account_number": "20",
+          "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "seda1afk9zr2hn2jsac63h4hm60vl9z3e5u69gndzf7c99cqge3vzwjzs026662",
+          "pub_key": null,
+          "account_number": "21",
+          "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "seda1dlszg2sst9r69my4f84l3mj66zxcf3umcgujys30t84srg95dgvsahaqzm",
+          "pub_key": null,
+          "account_number": "22",
+          "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "seda1c799jddmlz7segvg6jrw6w2k6svwafganjdznard3tc74n7td7rqt389vg",
+          "pub_key": null,
+          "account_number": "23",
           "sequence": "0"
         }
       ]
@@ -204,15 +232,6 @@
           ]
         },
         {
-          "address": "seda1f8wvqygky3y0nd09l7wsxzgs2ee28zwjdsgm49",
-          "coins": [
-            {
-              "denom": "aseda",
-              "amount": "500000000000000000000"
-            }
-          ]
-        },
-        {
           "address": "seda12k80y3nrsu5v8qkg3skercw8flfl7k0kngczfh",
           "coins": [
             {
@@ -232,15 +251,6 @@
         },
         {
           "address": "seda1ty77yxnfj4v6w0ahp8pq8tc79kaptvlky0al56",
-          "coins": [
-            {
-              "denom": "aseda",
-              "amount": "500000000000000000000"
-            }
-          ]
-        },
-        {
-          "address": "seda1v2z5t9aeysuhpa25uhfseyld8lw34w9xw77kt9",
           "coins": [
             {
               "denom": "aseda",
@@ -280,12 +290,21 @@
           "coins": [
             {
               "denom": "aseda",
-              "amount": "673418137445635000000000000"
+              "amount": "673386137445635000000000000"
             }
           ]
         },
         {
           "address": "seda139afw7xva2j2kq6a9d4hj824v48euejk4vcgr6",
+          "coins": [
+            {
+              "denom": "aseda",
+              "amount": "500000000000000000000"
+            }
+          ]
+        },
+        {
+          "address": "seda1ndmkk40r85y7ktmsjke0uvp8vqs29wskvt9tn3",
           "coins": [
             {
               "denom": "aseda",
@@ -330,7 +349,43 @@
           ]
         },
         {
+          "address": "seda1eslfqglp9868w5x4zkymvtc7ns6xx0za3p0c5h",
+          "coins": [
+            {
+              "denom": "aseda",
+              "amount": "500000000000000000000"
+            }
+          ]
+        },
+        {
           "address": "seda16x40k80h0f669rkedwg95dpy0hv9r582c5jnuf",
+          "coins": [
+            {
+              "denom": "aseda",
+              "amount": "500000000000000000000"
+            }
+          ]
+        },
+        {
+          "address": "seda165wrchr7ytf74mdtl4cmlfh7sawuk6l726wye2",
+          "coins": [
+            {
+              "denom": "aseda",
+              "amount": "500000000000000000000"
+            }
+          ]
+        },
+        {
+          "address": "seda1mzlmcm3m075hgkklty5ze5vka3mz7lesk9qpv0",
+          "coins": [
+            {
+              "denom": "aseda",
+              "amount": "500000000000000000000"
+            }
+          ]
+        },
+        {
+          "address": "seda1ur2hs0qqw0andz2msz3qq72nskg0tfh54rvmun",
           "coins": [
             {
               "denom": "aseda",
@@ -344,6 +399,15 @@
             {
               "denom": "aseda",
               "amount": "25000000000000000000000"
+            }
+          ]
+        },
+        {
+          "address": "seda17qpwql4ft6n6l7r0fy82s587ksq5rdmnsgy5ek",
+          "coins": [
+            {
+              "denom": "aseda",
+              "amount": "500000000000000000000"
             }
           ]
         }
@@ -440,7 +504,7 @@
         "min_deposit": [
           {
             "denom": "aseda",
-            "amount": "10000000"
+            "amount": "20000000000000000000000"
           }
         ],
         "max_deposit_period": "432000s",
@@ -474,24 +538,24 @@
           "admin": "seda1afk9zr2hn2jsac63h4hm60vl9z3e5u69gndzf7c99cqge3vzwjzs026662",
           "metadata": "Security Group",
           "version": "1",
-          "total_weight": "15",
-          "created_at": "2024-04-15T19:55:12.200894Z"
+          "total_weight": "151",
+          "created_at": "2024-04-19T16:26:38.178852Z"
         },
         {
           "id": "2",
           "admin": "seda1dlszg2sst9r69my4f84l3mj66zxcf3umcgujys30t84srg95dgvsahaqzm",
           "metadata": "Treasury Group",
           "version": "1",
-          "total_weight": "5",
-          "created_at": "2024-04-15T19:55:19.722927Z"
+          "total_weight": "61",
+          "created_at": "2024-04-19T16:26:45.703354Z"
         },
         {
           "id": "3",
           "admin": "seda1c799jddmlz7segvg6jrw6w2k6svwafganjdznard3tc74n7td7rqt389vg",
           "metadata": "OOA Group",
           "version": "1",
-          "total_weight": "3",
-          "created_at": "2024-04-15T19:55:34.752302Z"
+          "total_weight": "31",
+          "created_at": "2024-04-19T16:27:00.737740Z"
         }
       ],
       "group_members": [
@@ -499,153 +563,189 @@
           "group_id": "1",
           "member": {
             "address": "seda1pl5chwjy8jujd0fxkserhxhytdqerxd46tjkvr",
-            "weight": "3",
+            "weight": "30",
             "metadata": "",
-            "added_at": "2024-04-15T19:55:12.200894Z"
+            "added_at": "2024-04-19T16:26:38.178852Z"
           }
         },
         {
           "group_id": "1",
           "member": {
             "address": "seda18nypruuu8asruskvc962revz07s9msggrr75dx",
-            "weight": "1",
+            "weight": "10",
             "metadata": "",
-            "added_at": "2024-04-15T19:55:12.200894Z"
+            "added_at": "2024-04-19T16:26:38.178852Z"
           }
         },
         {
           "group_id": "1",
           "member": {
             "address": "seda185ccxhtmcfs8w9kn525vm2j9hf6k0zr652ml4p",
-            "weight": "1",
+            "weight": "10",
             "metadata": "",
-            "added_at": "2024-04-15T19:55:12.200894Z"
+            "added_at": "2024-04-19T16:26:38.178852Z"
           }
         },
         {
           "group_id": "1",
           "member": {
             "address": "seda12k80y3nrsu5v8qkg3skercw8flfl7k0kngczfh",
-            "weight": "1",
+            "weight": "10",
             "metadata": "",
-            "added_at": "2024-04-15T19:55:12.200894Z"
+            "added_at": "2024-04-19T16:26:38.178852Z"
           }
         },
         {
           "group_id": "1",
           "member": {
             "address": "seda127k9menrqqmfns33huplcghgpyg2ktm8n4f4ah",
-            "weight": "3",
+            "weight": "30",
             "metadata": "",
-            "added_at": "2024-04-15T19:55:12.200894Z"
+            "added_at": "2024-04-19T16:26:38.178852Z"
           }
         },
         {
           "group_id": "1",
           "member": {
             "address": "seda1val9lv35k8n7yrn4ynhk8twa72uf5x6n6l2gy5",
-            "weight": "2",
+            "weight": "20",
             "metadata": "",
-            "added_at": "2024-04-15T19:55:12.200894Z"
+            "added_at": "2024-04-19T16:26:38.178852Z"
           }
         },
         {
           "group_id": "1",
           "member": {
             "address": "seda139afw7xva2j2kq6a9d4hj824v48euejk4vcgr6",
-            "weight": "1",
+            "weight": "10",
             "metadata": "",
-            "added_at": "2024-04-15T19:55:12.200894Z"
+            "added_at": "2024-04-19T16:26:38.178852Z"
           }
         },
         {
           "group_id": "1",
           "member": {
             "address": "seda1n5s0mzyvydjjaelv8hjuygxza7vyhvuwz65jm8",
-            "weight": "1",
+            "weight": "10",
             "metadata": "",
-            "added_at": "2024-04-15T19:55:12.200894Z"
+            "added_at": "2024-04-19T16:26:38.178852Z"
           }
         },
         {
           "group_id": "1",
           "member": {
             "address": "seda16x40k80h0f669rkedwg95dpy0hv9r582c5jnuf",
-            "weight": "2",
+            "weight": "20",
             "metadata": "",
-            "added_at": "2024-04-15T19:55:12.200894Z"
+            "added_at": "2024-04-19T16:26:38.178852Z"
+          }
+        },
+        {
+          "group_id": "1",
+          "member": {
+            "address": "seda1mzlmcm3m075hgkklty5ze5vka3mz7lesk9qpv0",
+            "weight": "1",
+            "metadata": "",
+            "added_at": "2024-04-19T16:26:38.178852Z"
           }
         },
         {
           "group_id": "2",
           "member": {
             "address": "seda19ckzzewhl20kzqkeml0gud0hzep7n2f68j6wud",
-            "weight": "1",
+            "weight": "10",
             "metadata": "",
-            "added_at": "2024-04-15T19:55:19.722927Z"
-          }
-        },
-        {
-          "group_id": "2",
-          "member": {
-            "address": "seda1f8wvqygky3y0nd09l7wsxzgs2ee28zwjdsgm49",
-            "weight": "1",
-            "metadata": "",
-            "added_at": "2024-04-15T19:55:19.722927Z"
-          }
-        },
-        {
-          "group_id": "2",
-          "member": {
-            "address": "seda1v2z5t9aeysuhpa25uhfseyld8lw34w9xw77kt9",
-            "weight": "1",
-            "metadata": "",
-            "added_at": "2024-04-15T19:55:19.722927Z"
+            "added_at": "2024-04-19T16:26:45.703354Z"
           }
         },
         {
           "group_id": "2",
           "member": {
             "address": "seda1dwqjdtlv84k49smq33nc3awxzkck4ewu5lc8ek",
-            "weight": "1",
+            "weight": "10",
             "metadata": "",
-            "added_at": "2024-04-15T19:55:19.722927Z"
+            "added_at": "2024-04-19T16:26:45.703354Z"
+          }
+        },
+        {
+          "group_id": "2",
+          "member": {
+            "address": "seda1ndmkk40r85y7ktmsjke0uvp8vqs29wskvt9tn3",
+            "weight": "10",
+            "metadata": "",
+            "added_at": "2024-04-19T16:26:45.703354Z"
           }
         },
         {
           "group_id": "2",
           "member": {
             "address": "seda1hk7fv4j9pq3ger2f70n9thxnqwk5fxdqpc9mm2",
+            "weight": "10",
+            "metadata": "",
+            "added_at": "2024-04-19T16:26:45.703354Z"
+          }
+        },
+        {
+          "group_id": "2",
+          "member": {
+            "address": "seda1eslfqglp9868w5x4zkymvtc7ns6xx0za3p0c5h",
+            "weight": "10",
+            "metadata": "",
+            "added_at": "2024-04-19T16:26:45.703354Z"
+          }
+        },
+        {
+          "group_id": "2",
+          "member": {
+            "address": "seda165wrchr7ytf74mdtl4cmlfh7sawuk6l726wye2",
+            "weight": "10",
+            "metadata": "",
+            "added_at": "2024-04-19T16:26:45.703354Z"
+          }
+        },
+        {
+          "group_id": "2",
+          "member": {
+            "address": "seda17qpwql4ft6n6l7r0fy82s587ksq5rdmnsgy5ek",
             "weight": "1",
             "metadata": "",
-            "added_at": "2024-04-15T19:55:19.722927Z"
+            "added_at": "2024-04-19T16:26:45.703354Z"
           }
         },
         {
           "group_id": "3",
           "member": {
             "address": "seda1ty77yxnfj4v6w0ahp8pq8tc79kaptvlky0al56",
-            "weight": "1",
+            "weight": "10",
             "metadata": "",
-            "added_at": "2024-04-15T19:55:34.752302Z"
+            "added_at": "2024-04-19T16:27:00.737740Z"
           }
         },
         {
           "group_id": "3",
           "member": {
             "address": "seda1vn90z457kvhv8mxk6hy4cdlpf7uta67tlj3p89",
-            "weight": "1",
+            "weight": "10",
             "metadata": "",
-            "added_at": "2024-04-15T19:55:34.752302Z"
+            "added_at": "2024-04-19T16:27:00.737740Z"
           }
         },
         {
           "group_id": "3",
           "member": {
             "address": "seda15zwsa0d6q8f77szms5knaux6mhr45t3tj883pr",
+            "weight": "10",
+            "metadata": "",
+            "added_at": "2024-04-19T16:27:00.737740Z"
+          }
+        },
+        {
+          "group_id": "3",
+          "member": {
+            "address": "seda1ur2hs0qqw0andz2msz3qq72nskg0tfh54rvmun",
             "weight": "1",
             "metadata": "",
-            "added_at": "2024-04-15T19:55:34.752302Z"
+            "added_at": "2024-04-19T16:27:00.737740Z"
           }
         }
       ],
@@ -654,50 +754,50 @@
         {
           "address": "seda1dlszg2sst9r69my4f84l3mj66zxcf3umcgujys30t84srg95dgvsahaqzm",
           "group_id": "2",
-          "admin": "seda1dlszg2sst9r69my4f84l3mj66zxcf3umcgujys30t84srg95dgvsahaqzm",
+          "admin": "seda1lyfkj6xwecq3462qa683s78weexhp7d72ku3qf",
           "metadata": "{\"name\":\"Treasury Group Policy\",\"description\":\"\"}",
           "version": "1",
           "decision_policy": {
             "@type": "/cosmos.group.v1.ThresholdDecisionPolicy",
-            "threshold": "3",
+            "threshold": "40",
             "windows": {
               "voting_period": "604800s",
               "min_execution_period": "0s"
             }
           },
-          "created_at": "2024-04-15T19:55:19.722927Z"
+          "created_at": "2024-04-19T16:26:45.703354Z"
         },
         {
           "address": "seda1c799jddmlz7segvg6jrw6w2k6svwafganjdznard3tc74n7td7rqt389vg",
           "group_id": "3",
-          "admin": "seda1c799jddmlz7segvg6jrw6w2k6svwafganjdznard3tc74n7td7rqt389vg",
+          "admin": "seda1lyfkj6xwecq3462qa683s78weexhp7d72ku3qf",
           "metadata": "{\"name\":\"OOA Group Policy\",\"description\":\"\"}",
           "version": "1",
           "decision_policy": {
             "@type": "/cosmos.group.v1.ThresholdDecisionPolicy",
-            "threshold": "2",
+            "threshold": "20",
             "windows": {
               "voting_period": "604800s",
               "min_execution_period": "0s"
             }
           },
-          "created_at": "2024-04-15T19:55:34.752302Z"
+          "created_at": "2024-04-19T16:27:00.737740Z"
         },
         {
           "address": "seda1afk9zr2hn2jsac63h4hm60vl9z3e5u69gndzf7c99cqge3vzwjzs026662",
           "group_id": "1",
-          "admin": "seda1afk9zr2hn2jsac63h4hm60vl9z3e5u69gndzf7c99cqge3vzwjzs026662",
+          "admin": "seda1lyfkj6xwecq3462qa683s78weexhp7d72ku3qf",
           "metadata": "{\"name\":\"Security Group Policy\",\"description\":\"\"}",
           "version": "1",
           "decision_policy": {
             "@type": "/cosmos.group.v1.ThresholdDecisionPolicy",
-            "threshold": "7",
+            "threshold": "70",
             "windows": {
               "voting_period": "604800s",
               "min_execution_period": "0s"
             }
           },
-          "created_at": "2024-04-15T19:55:12.200894Z"
+          "created_at": "2024-04-19T16:26:38.178852Z"
         }
       ],
       "proposal_seq": "0",
