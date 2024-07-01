@@ -1,6 +1,6 @@
 {
   "app_name": "sedad",
-  "app_version": "v0.1.4",
+  "app_version": "v0.2.0-dev.1",
   "genesis_time": "2024-04-24T16:00:00Z",
   "chain_id": "seda-1-devnet",
   "initial_height": 1,
@@ -200,14 +200,14 @@
         },
         {
           "@type": "/cosmos.auth.v1beta1.BaseAccount",
-          "address": "seda1vduvn38hwz3w4gs3wzumd7xqxgwjtdhswqns2c",
+          "address": "seda13fadm3uhhd56cpvwyxth6qk7g82pu2yhgphrpl",
           "pub_key": null,
           "account_number": "26",
           "sequence": "0"
         },
         {
           "@type": "/cosmos.auth.v1beta1.BaseAccount",
-          "address": "seda1fnxzsd2zjxt0zh0xfrp754rte326z72wc8uczr",
+          "address": "seda1w3qn3kplkqt5gumtykneu9ugxkgcvlh4s55fyg",
           "pub_key": null,
           "account_number": "27",
           "sequence": "0"
@@ -269,15 +269,6 @@
           ]
         },
         {
-          "address": "seda1fnxzsd2zjxt0zh0xfrp754rte326z72wc8uczr",
-          "coins": [
-            {
-              "denom": "aseda",
-              "amount": "27500000000000000000000"
-            }
-          ]
-        },
-        {
           "address": "seda12k80y3nrsu5v8qkg3skercw8flfl7k0kngczfh",
           "coins": [
             {
@@ -301,15 +292,6 @@
             {
               "denom": "aseda",
               "amount": "500000000000000000000"
-            }
-          ]
-        },
-        {
-          "address": "seda1vduvn38hwz3w4gs3wzumd7xqxgwjtdhswqns2c",
-          "coins": [
-            {
-              "denom": "aseda",
-              "amount": "27500000000000000000000"
             }
           ]
         },
@@ -350,11 +332,29 @@
           ]
         },
         {
+          "address": "seda1w3qn3kplkqt5gumtykneu9ugxkgcvlh4s55fyg",
+          "coins": [
+            {
+              "denom": "aseda",
+              "amount": "27500000000000000000000"
+            }
+          ]
+        },
+        {
           "address": "seda139afw7xva2j2kq6a9d4hj824v48euejk4vcgr6",
           "coins": [
             {
               "denom": "aseda",
               "amount": "500000000000000000000"
+            }
+          ]
+        },
+        {
+          "address": "seda13fadm3uhhd56cpvwyxth6qk7g82pu2yhgphrpl",
+          "coins": [
+            {
+              "denom": "aseda",
+              "amount": "27500000000000000000000"
             }
           ]
         },
@@ -572,10 +572,10 @@
                 },
                 "min_self_delegation": "1",
                 "delegator_address": "",
-                "validator_address": "sedavaloper1fnxzsd2zjxt0zh0xfrp754rte326z72wn3yre6",
+                "validator_address": "sedavaloper1w3qn3kplkqt5gumtykneu9ugxkgcvlh4mzvjl3",
                 "pubkey": {
                   "@type": "/cosmos.crypto.ed25519.PubKey",
-                  "key": "6fPFNow0Z6J9WEe4YN4UvGtI1QrFrYuaHgEynq1q+c8="
+                  "key": "95OSD1i+VdGPaRG6tK4OVV6JvPGtH1eXtVrJ91Rp1Og="
                 },
                 "value": {
                   "denom": "aseda",
@@ -583,7 +583,7 @@
                 }
               }
             ],
-            "memo": "a6d9e9504004fa1e6b194d4c02c02df7a3fff210@18.130.31.180:26656",
+            "memo": "2075406829521da6774ae26b243f565473e0b838@13.41.193.77:26656",
             "timeout_height": "0",
             "extension_options": [],
             "non_critical_extension_options": []
@@ -593,7 +593,7 @@
               {
                 "public_key": {
                   "@type": "/cosmos.crypto.secp256k1.PubKey",
-                  "key": "AwrBXTycuUX15SC3qDw9aS1L+hnJudZE+HM4Mk/RdjhZ"
+                  "key": "AwHsZl+T6MQBgC8nhedF6uvWapcho/UGCCzvAl0vkC0+"
                 },
                 "mode_info": {
                   "single": {
@@ -612,7 +612,7 @@
             "tip": null
           },
           "signatures": [
-            "TJbVK8Qom/1h6V7Hg3ctp19IAa9v7MzK51SeG//Kqa9j73+3qvyG8Mshl5FWbONB2dGxz63PQ2uFOScpcxwNNg=="
+            "TRAsAxXPrUKF38ASCYas0pbfz84I56X/uGYakbx9VaR1ZCuImnT1tP6jLxWnplOEmkvuml95c9ZOyeuP+6WeWA=="
           ]
         },
         {
@@ -634,10 +634,10 @@
                 },
                 "min_self_delegation": "1",
                 "delegator_address": "",
-                "validator_address": "sedavaloper1vduvn38hwz3w4gs3wzumd7xqxgwjtdhs9ktt3p",
+                "validator_address": "sedavaloper13fadm3uhhd56cpvwyxth6qk7g82pu2yhrh0c6x",
                 "pubkey": {
                   "@type": "/cosmos.crypto.ed25519.PubKey",
-                  "key": "2Vb9540BrrYbuzUkSVFhhDG3wmzTHpb3QcXhSZfiigk="
+                  "key": "+x+Vf9l1fo6Oa2c0GDjOx56VeALzBf8+a1V3de60wgs="
                 },
                 "value": {
                   "denom": "aseda",
@@ -645,7 +645,7 @@
                 }
               }
             ],
-            "memo": "b47948902413a1c1a1420194c63dc69b71a0b29b@35.177.180.184:26656",
+            "memo": "3e3f2f862924b0d36547db82ada520a4fccbf96d@18.170.215.57:26656",
             "timeout_height": "0",
             "extension_options": [],
             "non_critical_extension_options": []
@@ -655,7 +655,7 @@
               {
                 "public_key": {
                   "@type": "/cosmos.crypto.secp256k1.PubKey",
-                  "key": "A1CQlM1O+BjDs3JQ+Yloiap95dhQWlWEZgsWmDR7EOhj"
+                  "key": "Agg/OOOB8i7pEgy8S7AyfC3EwoU0T43DHk9Fn72QpAqe"
                 },
                 "mode_info": {
                   "single": {
@@ -674,7 +674,7 @@
             "tip": null
           },
           "signatures": [
-            "+V7dKUW74R7TwoqeQi5pB4V/XJvCgyZb2EdfjTIHmf4bWDJ3/X/i6+lBsRvwG+UUqlzxwBu9l65TaFWVqh1qIQ=="
+            "WHXdsPm51SZ5QvZ182arqlbaa/TUZiuUZKbZ6zvLRId4GrfAFlwUMqgu89HyTQPriRO/ukoOZeM5UmyPBZtqXw=="
           ]
         }
       ]
@@ -728,7 +728,7 @@
           "metadata": "Security Group",
           "version": "1",
           "total_weight": "151",
-          "created_at": "2024-06-24T19:27:57.592732Z"
+          "created_at": "2024-06-26T20:02:53.355658Z"
         },
         {
           "id": "2",
@@ -736,7 +736,7 @@
           "metadata": "Treasury Group",
           "version": "1",
           "total_weight": "61",
-          "created_at": "2024-06-24T19:28:12.637373Z"
+          "created_at": "2024-06-26T20:03:00.867849Z"
         },
         {
           "id": "3",
@@ -744,7 +744,7 @@
           "metadata": "OOA Group",
           "version": "1",
           "total_weight": "31",
-          "created_at": "2024-06-24T19:28:20.155520Z"
+          "created_at": "2024-06-26T20:03:15.903331Z"
         }
       ],
       "group_members": [
@@ -754,7 +754,7 @@
             "address": "seda1pl5chwjy8jujd0fxkserhxhytdqerxd46tjkvr",
             "weight": "30",
             "metadata": "",
-            "added_at": "2024-06-24T19:27:57.592732Z"
+            "added_at": "2024-06-26T20:02:53.355658Z"
           }
         },
         {
@@ -763,7 +763,7 @@
             "address": "seda18nypruuu8asruskvc962revz07s9msggrr75dx",
             "weight": "10",
             "metadata": "",
-            "added_at": "2024-06-24T19:27:57.592732Z"
+            "added_at": "2024-06-26T20:02:53.355658Z"
           }
         },
         {
@@ -772,7 +772,7 @@
             "address": "seda185ccxhtmcfs8w9kn525vm2j9hf6k0zr652ml4p",
             "weight": "10",
             "metadata": "",
-            "added_at": "2024-06-24T19:27:57.592732Z"
+            "added_at": "2024-06-26T20:02:53.355658Z"
           }
         },
         {
@@ -781,7 +781,7 @@
             "address": "seda12k80y3nrsu5v8qkg3skercw8flfl7k0kngczfh",
             "weight": "10",
             "metadata": "",
-            "added_at": "2024-06-24T19:27:57.592732Z"
+            "added_at": "2024-06-26T20:02:53.355658Z"
           }
         },
         {
@@ -790,7 +790,7 @@
             "address": "seda127k9menrqqmfns33huplcghgpyg2ktm8n4f4ah",
             "weight": "30",
             "metadata": "",
-            "added_at": "2024-06-24T19:27:57.592732Z"
+            "added_at": "2024-06-26T20:02:53.355658Z"
           }
         },
         {
@@ -799,7 +799,7 @@
             "address": "seda1val9lv35k8n7yrn4ynhk8twa72uf5x6n6l2gy5",
             "weight": "20",
             "metadata": "",
-            "added_at": "2024-06-24T19:27:57.592732Z"
+            "added_at": "2024-06-26T20:02:53.355658Z"
           }
         },
         {
@@ -808,7 +808,7 @@
             "address": "seda139afw7xva2j2kq6a9d4hj824v48euejk4vcgr6",
             "weight": "10",
             "metadata": "",
-            "added_at": "2024-06-24T19:27:57.592732Z"
+            "added_at": "2024-06-26T20:02:53.355658Z"
           }
         },
         {
@@ -817,7 +817,7 @@
             "address": "seda1n5s0mzyvydjjaelv8hjuygxza7vyhvuwz65jm8",
             "weight": "10",
             "metadata": "",
-            "added_at": "2024-06-24T19:27:57.592732Z"
+            "added_at": "2024-06-26T20:02:53.355658Z"
           }
         },
         {
@@ -826,7 +826,7 @@
             "address": "seda16x40k80h0f669rkedwg95dpy0hv9r582c5jnuf",
             "weight": "20",
             "metadata": "",
-            "added_at": "2024-06-24T19:27:57.592732Z"
+            "added_at": "2024-06-26T20:02:53.355658Z"
           }
         },
         {
@@ -835,7 +835,7 @@
             "address": "seda1mzlmcm3m075hgkklty5ze5vka3mz7lesk9qpv0",
             "weight": "1",
             "metadata": "",
-            "added_at": "2024-06-24T19:27:57.592732Z"
+            "added_at": "2024-06-26T20:02:53.355658Z"
           }
         },
         {
@@ -844,7 +844,7 @@
             "address": "seda19ckzzewhl20kzqkeml0gud0hzep7n2f68j6wud",
             "weight": "10",
             "metadata": "",
-            "added_at": "2024-06-24T19:28:12.637373Z"
+            "added_at": "2024-06-26T20:03:00.867849Z"
           }
         },
         {
@@ -853,7 +853,7 @@
             "address": "seda1dwqjdtlv84k49smq33nc3awxzkck4ewu5lc8ek",
             "weight": "10",
             "metadata": "",
-            "added_at": "2024-06-24T19:28:12.637373Z"
+            "added_at": "2024-06-26T20:03:00.867849Z"
           }
         },
         {
@@ -862,7 +862,7 @@
             "address": "seda1ndmkk40r85y7ktmsjke0uvp8vqs29wskvt9tn3",
             "weight": "10",
             "metadata": "",
-            "added_at": "2024-06-24T19:28:12.637373Z"
+            "added_at": "2024-06-26T20:03:00.867849Z"
           }
         },
         {
@@ -871,7 +871,7 @@
             "address": "seda1hk7fv4j9pq3ger2f70n9thxnqwk5fxdqpc9mm2",
             "weight": "10",
             "metadata": "",
-            "added_at": "2024-06-24T19:28:12.637373Z"
+            "added_at": "2024-06-26T20:03:00.867849Z"
           }
         },
         {
@@ -880,7 +880,7 @@
             "address": "seda1eslfqglp9868w5x4zkymvtc7ns6xx0za3p0c5h",
             "weight": "10",
             "metadata": "",
-            "added_at": "2024-06-24T19:28:12.637373Z"
+            "added_at": "2024-06-26T20:03:00.867849Z"
           }
         },
         {
@@ -889,7 +889,7 @@
             "address": "seda165wrchr7ytf74mdtl4cmlfh7sawuk6l726wye2",
             "weight": "10",
             "metadata": "",
-            "added_at": "2024-06-24T19:28:12.637373Z"
+            "added_at": "2024-06-26T20:03:00.867849Z"
           }
         },
         {
@@ -898,7 +898,7 @@
             "address": "seda17qpwql4ft6n6l7r0fy82s587ksq5rdmnsgy5ek",
             "weight": "1",
             "metadata": "",
-            "added_at": "2024-06-24T19:28:12.637373Z"
+            "added_at": "2024-06-26T20:03:00.867849Z"
           }
         },
         {
@@ -907,7 +907,7 @@
             "address": "seda1ty77yxnfj4v6w0ahp8pq8tc79kaptvlky0al56",
             "weight": "10",
             "metadata": "",
-            "added_at": "2024-06-24T19:28:20.155520Z"
+            "added_at": "2024-06-26T20:03:15.903331Z"
           }
         },
         {
@@ -916,7 +916,7 @@
             "address": "seda1vn90z457kvhv8mxk6hy4cdlpf7uta67tlj3p89",
             "weight": "10",
             "metadata": "",
-            "added_at": "2024-06-24T19:28:20.155520Z"
+            "added_at": "2024-06-26T20:03:15.903331Z"
           }
         },
         {
@@ -925,7 +925,7 @@
             "address": "seda15zwsa0d6q8f77szms5knaux6mhr45t3tj883pr",
             "weight": "10",
             "metadata": "",
-            "added_at": "2024-06-24T19:28:20.155520Z"
+            "added_at": "2024-06-26T20:03:15.903331Z"
           }
         },
         {
@@ -934,7 +934,7 @@
             "address": "seda1ur2hs0qqw0andz2msz3qq72nskg0tfh54rvmun",
             "weight": "1",
             "metadata": "",
-            "added_at": "2024-06-24T19:28:20.155520Z"
+            "added_at": "2024-06-26T20:03:15.903331Z"
           }
         }
       ],
@@ -954,7 +954,7 @@
               "min_execution_period": "0s"
             }
           },
-          "created_at": "2024-06-24T19:28:12.637373Z"
+          "created_at": "2024-06-26T20:03:00.867849Z"
         },
         {
           "address": "seda1c799jddmlz7segvg6jrw6w2k6svwafganjdznard3tc74n7td7rqt389vg",
@@ -970,7 +970,7 @@
               "min_execution_period": "0s"
             }
           },
-          "created_at": "2024-06-24T19:28:20.155520Z"
+          "created_at": "2024-06-26T20:03:15.903331Z"
         },
         {
           "address": "seda1afk9zr2hn2jsac63h4hm60vl9z3e5u69gndzf7c99cqge3vzwjzs026662",
@@ -986,7 +986,7 @@
               "min_execution_period": "0s"
             }
           },
-          "created_at": "2024-06-24T19:27:57.592732Z"
+          "created_at": "2024-06-26T20:02:53.355658Z"
         }
       ],
       "proposal_seq": "0",
