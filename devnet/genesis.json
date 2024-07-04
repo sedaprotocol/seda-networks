@@ -341,29 +341,11 @@
           ]
         },
         {
-          "address": "seda1w3qn3kplkqt5gumtykneu9ugxkgcvlh4s55fyg",
-          "coins": [
-            {
-              "denom": "aseda",
-              "amount": "27500000000000000000000"
-            }
-          ]
-        },
-        {
           "address": "seda139afw7xva2j2kq6a9d4hj824v48euejk4vcgr6",
           "coins": [
             {
               "denom": "aseda",
               "amount": "500000000000000000000"
-            }
-          ]
-        },
-        {
-          "address": "seda13fadm3uhhd56cpvwyxth6qk7g82pu2yhgphrpl",
-          "coins": [
-            {
-              "denom": "aseda",
-              "amount": "27500000000000000000000"
             }
           ]
         },
