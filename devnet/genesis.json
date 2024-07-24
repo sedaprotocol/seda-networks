@@ -1,7 +1,7 @@
 {
   "app_name": "sedad",
-  "app_version": "v0.2.0-dev.2",
-  "genesis_time": "2024-04-24T16:00:00Z",
+  "app_version": "v0.2.0-dev.3",
+  "genesis_time": "2024-07-24T16:05:00Z",
   "chain_id": "seda-1-devnet",
   "initial_height": 1,
   "app_hash": null,
@@ -704,7 +704,7 @@
         "min_initial_deposit_ratio": "0.250000000000000000",
         "proposal_cancel_ratio": "0.500000000000000000",
         "proposal_cancel_dest": "",
-        "expedited_voting_period": "86400s",
+        "expedited_voting_period": "150s",
         "expedited_threshold": "0.667000000000000000",
         "expedited_min_deposit": [
           {
@@ -1132,7 +1132,7 @@
         "wasm_ttl": "259200"
       },
       "wasms": [],
-      "proxy_contract_registry": ""
+      "core_contract_registry": ""
     }
   },
   "consensus": {
