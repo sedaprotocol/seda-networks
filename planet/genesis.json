@@ -507,12 +507,9 @@
     "batching": {
       "current_batch_number": "0",
       "batches": [],
-      "tree_entries": [],
+      "batch_data": [],
       "data_results": [],
-      "batch_assignments": [],
-      "params": {
-        "validator_set_trim_percent": 95
-      }
+      "batch_assignments": []
     },
     "capability": {
       "index": "1",
