@@ -879,7 +879,11 @@
       "redelegations": [],
       "exported": false
     },
-    "tally": null,
+    "tally": {
+      "params": {
+        "max_tally_gas_limit": "300000000000000"
+      }
+    },
     "transfer": {
       "port_id": "transfer",
       "denom_traces": [],
