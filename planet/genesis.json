@@ -545,9 +545,6 @@
     },
     "tally": {
       "params": {
-<<<<<<< Updated upstream
-        "max_tally_gas_limit": "300000000000000"
-=======
         "max_tally_gas_limit": "150000000000000",
         "filter_gas_cost_none": "100000",
         "filter_gas_cost_multiplier_mode": "100000",
@@ -555,7 +552,6 @@
         "gas_cost_base": "1000000000000",
         "execution_gas_cost_fallback": "5000000000000",
         "burn_ratio": "0.200000000000000000"
->>>>>>> Stashed changes
       }
     },
     "transfer": {
