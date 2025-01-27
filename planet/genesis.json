@@ -551,7 +551,8 @@
         "filter_gas_cost_multiplier_std_dev": "100000",
         "gas_cost_base": "1000000000000",
         "execution_gas_cost_fallback": "5000000000000",
-        "burn_ratio": "0.200000000000000000"
+        "burn_ratio": "0.200000000000000000",
+        "max_result_size": 1024
       }
     },
     "transfer": {
