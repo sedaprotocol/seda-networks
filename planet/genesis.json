@@ -581,10 +581,9 @@
     "wasm-storage": {
       "params": {
         "max_wasm_size": "819200",
-        "wasm_ttl": "259200"
+        "upload_multiplier": "200"
       },
       "oracle_programs": [],
-      "executor_wasms": [],
       "core_contract_registry": ""
     }
   },
