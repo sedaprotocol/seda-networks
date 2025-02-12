@@ -1,6 +1,6 @@
 {
   "app_name": "sedad",
-  "app_version": "0.5.0-dev.5",
+  "app_version": "0.5.0-dev.10",
   "genesis_time": "2024-10-15T16:00:00Z",
   "chain_id": "seda-1-chaosnet",
   "initial_height": 1,
@@ -715,6 +715,13 @@
           "pub_key": null,
           "account_number": "99",
           "sequence": "0"
+        },
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "seda1lyfkj6xwecq3462qa683s78weexhp7d72ku3qf",
+          "pub_key": null,
+          "account_number": "100",
+          "sequence": "0"
         }
       ]
     },
@@ -727,6 +734,15 @@
         "default_send_enabled": true
       },
       "balances": [
+        {
+          "address": "seda1lyfkj6xwecq3462qa683s78weexhp7d72ku3qf",
+          "coins": [
+            {
+              "denom": "aseda",
+              "amount": "30000000000000000000000"
+            }
+          ]
+        },
         {
           "address": "seda1qy53gmgmg0v4pyrckxppmcaq4s7uhqgtpcpqvd",
           "coins": [
@@ -2001,10 +2017,9 @@
     "wasm-storage": {
       "params": {
         "max_wasm_size": "819200",
-        "wasm_ttl": "259200"
+        "wasm_cost_per_byte": "50000000000000"
       },
       "oracle_programs": [],
-      "executor_wasms": [],
       "core_contract_registry": ""
     }
   },
