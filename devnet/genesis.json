@@ -1,6 +1,6 @@
 {
   "app_name": "sedad",
-  "app_version": "v0.4.0-dev.10",
+  "app_version": "v0.5.0-dev.11",
   "genesis_time": "2024-10-15T16:00:00Z",
   "chain_id": "seda-1-devnet",
   "initial_height": 1,
@@ -262,7 +262,7 @@
                 "indexed_pub_keys": [
                   {
                     "index": 0,
-                    "pub_key": "BLaJDghWPflMO3sTvT+G2x7Qg63YZgfX0cVHDglUi4MlPlwDY3xtTJzNAVph0jxUmKtCjLjZvC30nh4E1vgKGok="
+                    "pub_key": "BHE2NBqxOC2Z1acWK5h5fTT0FS4OQjtAZADfixeID90u6Xmr2h5jmPI60WJD4p8aksGbhAJik48v8ChBKLzpvLE="
                   }
                 ]
               }
@@ -296,7 +296,7 @@
             "tip": null
           },
           "signatures": [
-            "cq1/i4GU4+WqWTQ1s+zzOkRGEmeK/IjAZwh87QjQnKVklUj+cSxkoO+SThzK18PPy9uVLqQD0ch+/QwJ/dSjog=="
+            "skcjOx9cvq0EdXLBjfv+FYPT3H52L4KhTAyssDbNaUNCMSVpH5GvdTXpMvWBQJD2nllg/niaSlQxCDU40wKwGQ=="
           ]
         },
         {
@@ -330,7 +330,7 @@
                 "indexed_pub_keys": [
                   {
                     "index": 0,
-                    "pub_key": "BL16MsyYeAjTaQ7iv3iD3QVQtXuAEe5ZVLfaKlXg6GTZcMgWT+SUhlcDuz1UEGTM6CQvO497AoetfArTTRQiDs8="
+                    "pub_key": "BEoSmSsG3VidOi0yCcJJ63Wxt2lGMNYY8sxvKbealwUW9qFElWWGplJ9iBFNLKQO14fbnjp/rJYcsIki4ODs0Bw="
                   }
                 ]
               }
@@ -364,7 +364,7 @@
             "tip": null
           },
           "signatures": [
-            "OlB2M5JZuUj2/pGKnd8wG7IgJS18JXWYHsYFlVNoKN5VdoqUKtQ0N5x6HaM8YDCLicpoDzGODQVmSW1+TcbDdA=="
+            "owWdm6hYzMHYGmGIspwTWiG2JJYkMHRO6n7eMCGqVzQY02719/0t5DqPUI9RYjmsdUF+IFM6zpJErPtqmK8n5g=="
           ]
         }
       ]
@@ -496,9 +496,6 @@
       }
     },
     "packetfowardmiddleware": {
-      "params": {
-        "fee_percentage": "0.000000000000000000"
-      },
       "in_flight_packets": {}
     },
     "pubkey": {
@@ -545,7 +542,15 @@
     },
     "tally": {
       "params": {
-        "max_tally_gas_limit": "300000000000000"
+        "max_tally_gas_limit": "50000000000000",
+        "filter_gas_cost_none": "100000",
+        "filter_gas_cost_multiplier_mode": "100000",
+        "filter_gas_cost_multiplier_std_dev": "100000",
+        "gas_cost_base": "1000000000000",
+        "execution_gas_cost_fallback": "5000000000000",
+        "burn_ratio": "0.200000000000000000",
+        "max_result_size": 1024,
+        "max_tallies_per_block": 100
       }
     },
     "transfer": {
@@ -573,11 +578,10 @@
     },
     "wasm-storage": {
       "params": {
-        "max_wasm_size": "819200",
-        "wasm_ttl": "259200"
+        "max_wasm_size": "1048576",
+        "wasm_cost_per_byte": "50000000000000"
       },
       "oracle_programs": [],
-      "executor_wasms": [],
       "core_contract_registry": ""
     }
   },
@@ -601,7 +605,7 @@
         "app": "0"
       },
       "abci": {
-        "vote_extensions_enable_height": "100"
+        "vote_extensions_enable_height": "20"
       }
     }
   }
