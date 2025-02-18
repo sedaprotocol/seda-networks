@@ -262,7 +262,7 @@
                 "indexed_pub_keys": [
                   {
                     "index": 0,
-                    "pub_key": "BIRrou61fqhmz1V6I9/1uQNCZRut6eQsq6gvObFUjIScLf9GKJPFvlcUBlLRTIxtLhYo4YVN81Y3eU789Q8hRqM="
+                    "pub_key": "BACMy+RUxvx1OiYzkM4dcc4AB4ejPnUdQKb8QHZaBDqujPjPblZOGy+P/KBmqlapN4I0bOb2IitofTld9e4+VvE="
                   }
                 ]
               }
@@ -296,7 +296,7 @@
             "tip": null
           },
           "signatures": [
-            "cXthi6zUlqApRjNFOOlYLC+vQ50SnwTUUnZeEGyV/2goM/gmNtxvvnZUrB4FUttXgIbIi3ag/TW3eoxV0/CUlg=="
+            "HAeW8jO3UNao7/sKnsWn726jW55TUOlnB7HTqMLG4Nte+gifoSmk0ssRVpalRDBFO3v5X/enmMdYdO+monb3aw=="
           ]
         },
         {
@@ -330,7 +330,7 @@
                 "indexed_pub_keys": [
                   {
                     "index": 0,
-                    "pub_key": "BJ6MynA178PlpJfGfTY20m0pdl5AhsQeLcMro7wrc/oyCBxuM9Rj9nML7LoQz5VFarUpHBomUPd70dtOK9C81HU="
+                    "pub_key": "BMvc6+pFVNmzToELxKsxou9EvzggJJ19d7sRBGl1Y6i/ZVklZZNDlm7YxnyuqWqifaCOsyBavZEEYhoXOynVtw8="
                   }
                 ]
               }
@@ -364,7 +364,7 @@
             "tip": null
           },
           "signatures": [
-            "7cS1Hks5pAsmISIbrfbNLHnZubAaxx6uwkK/bA7AeXlqOB+drn1z/x70X5FxvMuHWW5f7Cz4jH6sJSuVTC/kDw=="
+            "LTfG6iBQhlceezta+mleB8Vq9sWgEYjUOkwxdE0XKnc+Lcpp8cby+f6+HT+7NsATZfbC+dGIHxtO5BBryG9WeA=="
           ]
         }
       ]
@@ -500,7 +500,7 @@
     },
     "pubkey": {
       "params": {
-        "activation_block_delay": "11520",
+        "activation_block_delay": "25",
         "activation_threshold_percent": 80
       },
       "validator_pub_keys": [],
