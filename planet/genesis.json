@@ -95,14 +95,14 @@
         },
         {
           "@type": "/cosmos.auth.v1beta1.BaseAccount",
-          "address": "seda12yfe9zg05hfgvjgccqelydssqkzlmwn047eew0",
+          "address": "seda1s5catf9rwd4499vyw9dkgex4n2qvrkqr4gksen",
           "pub_key": null,
           "account_number": "11",
           "sequence": "0"
         },
         {
           "@type": "/cosmos.auth.v1beta1.BaseAccount",
-          "address": "seda147sj0fsmv0t78wh0tfhpc5rvzntr6axfxghqsr",
+          "address": "seda12r36uqavm7zs4rdr9evd83ls7pfdsz7vh6293g",
           "pub_key": null,
           "account_number": "12",
           "sequence": "0"
@@ -146,7 +146,7 @@
           ]
         },
         {
-          "address": "seda12yfe9zg05hfgvjgccqelydssqkzlmwn047eew0",
+          "address": "seda12r36uqavm7zs4rdr9evd83ls7pfdsz7vh6293g",
           "coins": [
             {
               "denom": "aseda",
@@ -164,20 +164,20 @@
           ]
         },
         {
+          "address": "seda1s5catf9rwd4499vyw9dkgex4n2qvrkqr4gksen",
+          "coins": [
+            {
+              "denom": "aseda",
+              "amount": "28500000000000000000000"
+            }
+          ]
+        },
+        {
           "address": "seda1jd2q0mz0vzs75tp7lyuzf9064zccddgs8utjr5",
           "coins": [
             {
               "denom": "aseda",
               "amount": "500000000000000000000"
-            }
-          ]
-        },
-        {
-          "address": "seda147sj0fsmv0t78wh0tfhpc5rvzntr6axfxghqsr",
-          "coins": [
-            {
-              "denom": "aseda",
-              "amount": "28500000000000000000000"
             }
           ]
         },
@@ -337,74 +337,6 @@
               {
                 "@type": "/sedachain.staking.v1.MsgCreateSEDAValidator",
                 "description": {
-                  "moniker": "SEDA-node1",
-                  "identity": "",
-                  "website": "",
-                  "security_contact": "",
-                  "details": ""
-                },
-                "commission": {
-                  "rate": "0.100000000000000000",
-                  "max_rate": "0.200000000000000000",
-                  "max_change_rate": "0.010000000000000000"
-                },
-                "min_self_delegation": "1",
-                "delegator_address": "",
-                "validator_address": "sedavaloper147sj0fsmv0t78wh0tfhpc5rvzntr6axfd70mt6",
-                "pubkey": {
-                  "@type": "/cosmos.crypto.ed25519.PubKey",
-                  "key": "NPvjJycVo9B99SO3880pNkeldjl2M20lL+txMrAec0s="
-                },
-                "value": {
-                  "denom": "aseda",
-                  "amount": "27500000000000000000000"
-                },
-                "indexed_pub_keys": [
-                  {
-                    "index": 0,
-                    "pub_key": "BBoqF/9ksTdQxypiQWZKDF0BA40hRd4VKe+8OHuExbwHO1+vzK2INsiycc+eqw3tXEawg13/AC4a3i9FSQbsHoQ="
-                  }
-                ]
-              }
-            ],
-            "memo": "306acbe3343fc1b9740da146b958bd45b6a77687@18.168.150.166:26656",
-            "timeout_height": "0",
-            "extension_options": [],
-            "non_critical_extension_options": []
-          },
-          "auth_info": {
-            "signer_infos": [
-              {
-                "public_key": {
-                  "@type": "/cosmos.crypto.secp256k1.PubKey",
-                  "key": "AxnKh24HYmLc+lXwl+WAzbfMsMwHpSacSB/ZhVrmgqNT"
-                },
-                "mode_info": {
-                  "single": {
-                    "mode": "SIGN_MODE_DIRECT"
-                  }
-                },
-                "sequence": "0"
-              }
-            ],
-            "fee": {
-              "amount": [],
-              "gas_limit": "200000",
-              "payer": "",
-              "granter": ""
-            },
-            "tip": null
-          },
-          "signatures": [
-            "RWsicKAIByP6tDR40ojXfEtNK/4S7vrqzG+MpjQxtrkNvFFmLP7gNn0Vt+2jvMUiEXtYOWLCOcV1k0M7iZFmZw=="
-          ]
-        },
-        {
-          "body": {
-            "messages": [
-              {
-                "@type": "/sedachain.staking.v1.MsgCreateSEDAValidator",
-                "description": {
                   "moniker": "SEDA-node0",
                   "identity": "",
                   "website": "",
@@ -418,10 +350,10 @@
                 },
                 "min_self_delegation": "1",
                 "delegator_address": "",
-                "validator_address": "sedavaloper12yfe9zg05hfgvjgccqelydssqkzlmwn07gpz4k",
+                "validator_address": "sedavaloper1s5catf9rwd4499vyw9dkgex4n2qvrkqr77wtz2",
                 "pubkey": {
                   "@type": "/cosmos.crypto.ed25519.PubKey",
-                  "key": "VF8WrYVLbOd/2t5ox5mXSVoAAdy9H7R0S61IaJ1emtU="
+                  "key": "nAZFEMmUnNmVrw/EtZygppWBjecB0cDO0DssKgo2b0o="
                 },
                 "value": {
                   "denom": "aseda",
@@ -430,12 +362,12 @@
                 "indexed_pub_keys": [
                   {
                     "index": 0,
-                    "pub_key": "BFlSVZnIZmShFs2CWeM7gqWPqusaC3arSUWbzR8w6POs/qY9rKhh6DnJCDXX/dLa+lGUT/hO4R0QnQymk2A3Q9k="
+                    "pub_key": "BK6FutNS55cDBomXmFEACzk1NbjY8m6GfX2kg/ou03+Ut5rt9whgJlxUhBMpmF7D9jTSYSzkzdEh0Q/U5doF3Ac="
                   }
                 ]
               }
             ],
-            "memo": "8e75e7d585d1e12230b441411c995cc17d0f02cc@13.42.4.145:26656",
+            "memo": "4c630eab1cdde7a8471b75675d5db257fe833038@13.42.4.145:26656",
             "timeout_height": "0",
             "extension_options": [],
             "non_critical_extension_options": []
@@ -445,7 +377,7 @@
               {
                 "public_key": {
                   "@type": "/cosmos.crypto.secp256k1.PubKey",
-                  "key": "AqYBuVWXW3AD5BgQ/K9F3ZNeyV+idNhjuk+AEuLI74YR"
+                  "key": "Al1msM1Oc45H5gpLM3X2LrVVNtxyeHQKSO0rkXF7O5an"
                 },
                 "mode_info": {
                   "single": {
@@ -464,7 +396,75 @@
             "tip": null
           },
           "signatures": [
-            "ODQiEoGfyooQVHgKfw/BsbZNVhZKiIt2GGSJMN/j+7MmjuMIC3MesCUpUB4vTW0tWlozCCeKXLN4S0M1lq7u2w=="
+            "qTbAilInLgozt9xQyrNIBdYE25fUb/bxAh4DYp15bspTd9iAaNH+TS8m880YOXpt1mAQNP0QV9XqBcH3yDptdg=="
+          ]
+        },
+        {
+          "body": {
+            "messages": [
+              {
+                "@type": "/sedachain.staking.v1.MsgCreateSEDAValidator",
+                "description": {
+                  "moniker": "SEDA-node1",
+                  "identity": "",
+                  "website": "",
+                  "security_contact": "",
+                  "details": ""
+                },
+                "commission": {
+                  "rate": "0.100000000000000000",
+                  "max_rate": "0.200000000000000000",
+                  "max_change_rate": "0.010000000000000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "",
+                "validator_address": "sedavaloper12r36uqavm7zs4rdr9evd83ls7pfdsz7vuvj723",
+                "pubkey": {
+                  "@type": "/cosmos.crypto.ed25519.PubKey",
+                  "key": "VfmqioYBP5Vs6Nge6modKkSqzzHDHmCqtVcB1IbXV48="
+                },
+                "value": {
+                  "denom": "aseda",
+                  "amount": "27500000000000000000000"
+                },
+                "indexed_pub_keys": [
+                  {
+                    "index": 0,
+                    "pub_key": "BNOnoIkK1gpe7PuECgP07DraDb8+kgGSwEe7/6i+sbd4UT94R5QSRrI3vVQSj7yKVg7OVkPw5UEfuQfeqdEU0CU="
+                  }
+                ]
+              }
+            ],
+            "memo": "915e872c4fb912a80130cf851b70c3530f396b82@18.168.150.166:26656",
+            "timeout_height": "0",
+            "extension_options": [],
+            "non_critical_extension_options": []
+          },
+          "auth_info": {
+            "signer_infos": [
+              {
+                "public_key": {
+                  "@type": "/cosmos.crypto.secp256k1.PubKey",
+                  "key": "ApYrEIHUwAh1jSL3xv6Y0vnhJdf6eAh6n7zqu/BwH5ub"
+                },
+                "mode_info": {
+                  "single": {
+                    "mode": "SIGN_MODE_DIRECT"
+                  }
+                },
+                "sequence": "0"
+              }
+            ],
+            "fee": {
+              "amount": [],
+              "gas_limit": "200000",
+              "payer": "",
+              "granter": ""
+            },
+            "tip": null
+          },
+          "signatures": [
+            "gqNJ762x3MoaDP2HCrmg8kXrjaL8NOvPQESUI2bcDvQen5LRuSfd9m79w7G4t0/OQRTRwC9VAv+emdXnGgpZIg=="
           ]
         }
       ]
@@ -600,7 +600,7 @@
     },
     "pubkey": {
       "params": {
-        "activation_block_delay": "25",
+        "activation_block_delay": "100",
         "activation_threshold_percent": 80
       },
       "validator_pub_keys": [],
